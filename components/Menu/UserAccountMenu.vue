@@ -43,11 +43,11 @@ export default {
 <style lang="sass">
 @import "../../assets/sass/vars"
 .acc-header
-  padding: 1rem
+  padding: 1.3rem 1rem
   box-sizing: border-box
   border-bottom: 1px solid $color-for-border
   background-color: white
-  height: 10%
+  min-height: 20%
   border-top-right-radius: 5px
   border-top-left-radius: 5px
   .acc-header-for-auth
@@ -111,7 +111,7 @@ export default {
     .drawer-body, .drawer-body > div
       height: 100%
   .acc-menu
-    height: 79.9%
+    height: 72%
     overflow-y: auto
     white-space: nowrap
     -webkit-overflow-scrolling: touch

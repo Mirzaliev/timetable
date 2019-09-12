@@ -33,7 +33,7 @@ export default {
   padding: 1.5rem 6rem
   border-bottom: 1px solid $color-for-border
   &-logo
-    width: 25%
+    width: 30%
   &__logo
     display: block
     font-size: 1.4em
@@ -41,12 +41,11 @@ export default {
     line-height: 1
     text-transform: uppercase
     white-space: nowrap
-    margin-right: 1rem
   &-nav
     display: flex
     align-items: center
     justify-content: flex-end
-    width: 75%
+    width: 70%
 @include respond-below(laptop)
   .header
     padding: 1.1rem 1rem
