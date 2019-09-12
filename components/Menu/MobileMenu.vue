@@ -70,10 +70,6 @@ export default {
     .header-nav-links
       .header-nav__link_mobile
         display: block
-
-
-
-
 @include respond-below(phone)
   .header-mm
     display: block

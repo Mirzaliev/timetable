@@ -46,6 +46,8 @@ export default {
     align-items: center
     justify-content: flex-end
     width: 70%
+    .acc-text-formatted
+      overflow: initial
 @include respond-below(laptop)
   .header
     padding: 1.1rem 1rem

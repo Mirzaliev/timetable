@@ -85,7 +85,6 @@ export default {
     margin-top: .5rem
     line-height: 1
   .acc-text-formatted
-    display: block
     text-overflow: ellipsis
     overflow: hidden
     white-space: nowrap
@@ -120,6 +119,9 @@ export default {
       .header-nav__link
         border-top: 1px solid $background-hover
         padding: .7rem 1rem
+        text-overflow: ellipsis
+        overflow: hidden
+        white-space: nowrap
         &:first-child
           border-top: none
 </style>

@@ -8,7 +8,10 @@
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
-    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile"
+      >Мои экзамены для второго курса очной формы Мои экзамены для второго курса
+      очной формы</a
+    >
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
