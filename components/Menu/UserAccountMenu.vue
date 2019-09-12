@@ -17,7 +17,7 @@
         </div>
       </div>
       <div v-else class="acc-header-for-noauth">
-        <a href="#" class="header-for-noauth_link">ВОЙТИ</a>
+        <a href="#" class="acc-header-for-noauth__link">ВОЙТИ</a>
       </div>
     </div>
     <div class="acc-menu">
@@ -47,8 +47,16 @@ export default {
   box-sizing: border-box
   border-bottom: 1px solid $color-for-border
   background-color: white
+  height: 10%
   .acc-header-for-auth
     display: flex
+  .acc-header-for-noauth
+    width: 100%
+    text-align: center
+    &__link
+      display: block
+      color: $accent
+      font-family: $medium
   .avatar
     width: 40px
     height: 40px
@@ -88,8 +96,28 @@ export default {
     flex-direction: column
   .header-nav__link
     display: block
-    padding: .8em
-    border-bottom: 1px solid $color-for-border
+    padding: .5rem 1rem
+    &:hover
+      background-color: $background-hover
+      color: $text
   .header-nav__link_mobile
     display: none
+  .logout
+    border-top: 1px solid $color-for-border
+@include respond-below(phone)
+  .mobile-drawer
+    .drawer-body, .drawer-body > div
+      height: 100%
+  .acc-menu
+    height: 79.9%
+    overflow-y: auto
+    white-space: nowrap
+    -webkit-overflow-scrolling: touch
+    -ms-overflow-style: -ms-autohiding-scrollbar
+    .header-nav-links
+      .header-nav__link
+        border-top: 1px solid $background-hover
+        padding: .7rem 1rem
+        &:first-child
+          border-top: none
 </style>

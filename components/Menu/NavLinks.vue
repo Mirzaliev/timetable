@@ -7,13 +7,10 @@
     <a href="" class="header-nav__link header-nav__link_mobile"
       >Мое расписание</a
     >
-    <a href="" class="header-nav__link header-nav__link_mobile"
-      >Мое расписание</a
-    >
-    <a href="" class="header-nav__link header-nav__link_special"
-      >Специальная кнопка</a
-    >
-    <a href="" class="header-nav__link header-nav__link_special">Выход</a>
+    <a href="" class="header-nav__link header-nav__link_special">Моя группа</a>
+    <a href="" class="header-nav__link header-nav__link_special logout">
+      Выход
+    </a>
   </nav>
 </template>
 
@@ -41,6 +38,14 @@ export default {
   padding-left: .8em
   &:first-child
     padding-left: 0
+.header-nav__link_icon
+  display: flex!important
+  align-items: center
+  svg
+    width: 1.1rem
+    margin-right: .5rem
+    path
+      fill: $color-for-border
 .header-nav__link_special
   display: none
 @include respond-below(laptop)

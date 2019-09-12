@@ -71,11 +71,12 @@ export default {
       transform: scale(1)
       border-color: $accent
 .account-dropdown
-  display: none
+  display: block
   position: absolute
   z-index: 2201
   max-height: 600px
-  max-width: 300px
+  min-width: 200px
+  max-width: 280px
   width: auto
   background-color: white
   margin-top: .3rem
