@@ -49,6 +49,7 @@ export default {
   &:hover
     .account-dropdown
       display: block
+      opacity: 1
 .account__avatar
     display: block
     position: relative
@@ -82,7 +83,10 @@ export default {
   margin-top: .3rem
   top: 100%
   right: 50%
-  border: 1px solid $color-for-border
+  border-radius: 5px
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26)
+  opacity: 0
+  transition: opacity .6s ease
 @include respond-below(laptop)
   .header-user__login
     font-size: .9em

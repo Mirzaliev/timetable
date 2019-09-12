@@ -4,6 +4,15 @@
       >Мое расписание</a
     >
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
     <a href="" class="header-nav__link header-nav__link_mobile"
       >Мое расписание</a
     >

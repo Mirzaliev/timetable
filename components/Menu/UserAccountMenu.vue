@@ -48,6 +48,8 @@ export default {
   border-bottom: 1px solid $color-for-border
   background-color: white
   height: 10%
+  border-top-right-radius: 5px
+  border-top-left-radius: 5px
   .acc-header-for-auth
     display: flex
   .acc-header-for-noauth
