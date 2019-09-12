@@ -66,6 +66,7 @@ export default {
       margin-bottom: 0
     &__logo
       font-size: 1.1em
+      margin-right: 0
     &-nav
       width: auto
       justify-content: flex-end
