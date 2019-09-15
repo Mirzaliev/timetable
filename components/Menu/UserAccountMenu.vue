@@ -20,9 +20,7 @@
         <a href="#" class="acc-header-for-noauth__link">ВОЙТИ</a>
       </div>
     </div>
-    <div class="acc-menu">
-      <nav-links></nav-links>
-    </div>
+    <nav-links></nav-links>
   </div>
 </template>
 
@@ -88,40 +86,4 @@ export default {
     text-overflow: ellipsis
     overflow: hidden
     white-space: nowrap
-.acc-menu
-  .header-nav-links
-    overflow-x: hidden
-    margin-left: 0
-    text-align: left
-    display: flex
-    flex-direction: column
-  .header-nav__link
-    display: block
-    padding: .5rem 1rem
-    &:hover
-      background-color: $background-hover
-      color: $text
-  .header-nav__link_mobile
-    display: none
-  .logout
-    border-top: 1px solid $color-for-border
-@include respond-below(phone)
-  .mobile-drawer
-    .drawer-body, .drawer-body > div
-      height: 100%
-  .acc-menu
-    height: 72%
-    overflow-y: auto
-    white-space: nowrap
-    -webkit-overflow-scrolling: touch
-    -ms-overflow-style: -ms-autohiding-scrollbar
-    .header-nav-links
-      .header-nav__link
-        border-top: 1px solid $background-hover
-        padding: .7rem 1rem
-        text-overflow: ellipsis
-        overflow: hidden
-        white-space: nowrap
-        &:first-child
-          border-top: none
 </style>
