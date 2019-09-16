@@ -45,7 +45,6 @@ export default {
   box-sizing: border-box
   border-bottom: 1px solid $color-for-border
   background-color: white
-  min-height: 20%
   border-top-right-radius: 5px
   border-top-left-radius: 5px
   .acc-header-for-auth
@@ -76,6 +75,7 @@ export default {
     line-height: 1
   .account-user__mail
     font-size: .9em
+    color: $grey-for-text
   .account-user__lk
     display: block
     font-size: .9em

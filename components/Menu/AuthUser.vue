@@ -143,14 +143,16 @@ export default {
     flex-direction: column
     margin-left: 0
     text-align: left
-    padding: .3rem 0
+    padding: .2rem 0
   .header-nav__link
-    padding-left: 0
-    color: $accent
+    padding: .5rem 1rem
     &_mobile
       display: none
     &_special
       display: block
+    &:hover
+      background-color: $background-hover
+      color: inherit
 @include respond-below(laptop)
   .header-user__login
     font-size: .9em
