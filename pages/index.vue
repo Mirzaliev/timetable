@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <section class="index-section searchPage">
+    <div class="searchPage__title">ПОИСК</div>
     <v-select
       label="name"
       :filterable="false"
@@ -20,7 +21,7 @@
         </div>
       </template>
     </v-select>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -55,10 +56,19 @@ export default {
 
 <style lang="sass">
 @import "~vue-select/src/scss/vue-select.scss"
-.container
+.index-section
   display: flex
-  margin-top: 10rem
+  margin: 12rem auto 0 auto
   justify-content: center
+  flex-direction: column
+  width: 582px
   .v-select
-    width: 500px
+    width: 100%
+.index-section
+  .vs__dropdown-toggle
+    background-color: #41b883
+    border-radius: 30px
+  .vs__search
+    background-color: #35495e
+    color: white
 </style>

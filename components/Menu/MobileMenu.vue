@@ -61,7 +61,7 @@ export default {
       const dch = drawerContent.offsetHeight
       const dhh = drawerContent.children[0].children[0].offsetHeight
       const drawerBody = drawerContent.children[0].children[1].children[0]
-      drawerBody.style.maxHeight = `${dch - dhh}px`
+      drawerBody.style.maxHeight = `${dch - dhh - 3}px`
     }
   }
 }
