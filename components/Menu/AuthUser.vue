@@ -61,6 +61,7 @@ export default {
 .header-user-auth
   margin-left: 1.5rem
   position: relative
+  outline: none
 .account__avatar
     display: block
     position: relative
@@ -69,6 +70,7 @@ export default {
     border-radius: 10em
     transition: all .8s
     border: 1.5px solid transparent
+    outline: none
     &_bg
       position: absolute
       top: 0

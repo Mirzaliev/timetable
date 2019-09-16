@@ -79,11 +79,15 @@ export default {
     .header-nav-links
       .header-nav__link_mobile
         display: block
+  .drawer-header
+    display: none
 .drawer-body > div
   display: flex
   width: 100%
   min-height: 0
   flex-direction: column
+  .acc-header
+    padding: 1.4rem 1rem
 @include respond-below(phone)
   .header-mm
     display: block
