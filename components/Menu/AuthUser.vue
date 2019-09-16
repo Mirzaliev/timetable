@@ -1,6 +1,11 @@
 <template>
   <div class="header-user">
-    <div v-if="auth" class="header-user-auth account" tabindex="1">
+    <div
+      v-if="auth"
+      class="header-user-auth account"
+      @focusout="closeAccountMenu"
+      @focusin="openAccountMenu"
+    >
       <a href="#" class="account__avatar">
         <span
           class="account__avatar_bg"
@@ -27,7 +32,17 @@ export default {
       accountDropdownshow: false
     }
   },
-  methods: {}
+  mounted() {},
+  methods: {
+    openAccountMenu() {
+      console.log('openAccountMenu')
+      this.$refs.accountDropdown.classList.add('account-dropdown_shown')
+    },
+    closeAccountMenu(e) {
+      console.log(e)
+      this.$refs.accountDropdown.classList.remove('account-dropdown_shown')
+    }
+  }
 }
 </script>
 
@@ -46,13 +61,6 @@ export default {
 .header-user-auth
   margin-left: 1.5rem
   position: relative
-  &:focus-within
-    .account-dropdown
-      visibility: visible!important
-      opacity: 1!important
-      filter: none!important
-      top: 120%!important
-      pointer-events: auto!important
 .account__avatar
     display: block
     position: relative
@@ -71,7 +79,6 @@ export default {
       background-repeat: no-repeat
       background-size: cover
       border-radius: 10em
-
     &:hover
       transform: scale(1)
       border-color: $accent
@@ -121,8 +128,10 @@ export default {
     margin-left: 0
     text-align: left
     padding: .2rem 0
+    outline: none
   .header-nav__link
     padding: .5rem 1rem
+    outline: none
     &_mobile
       display: none
     &_special

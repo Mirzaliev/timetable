@@ -1,16 +1,17 @@
 <template>
   <div>
-    <div class="acc-header">
-      <div v-if="auth" class="acc-header-for-auth">
+    <div class="acc-header" tabindex="1">
+      <div v-if="auth" class="acc-header-for-auth" tabindex="1">
         <div
+          tabindex="1"
           class="avatar"
           style="background-image: url(https://peopletalk.ru/wp-content/uploads/2016/11/1480331127.jpg)"
         ></div>
-        <div class="account-user-wrap">
-          <span class="account-user__name acc-text-formatted"
+        <div class="account-user-wrap" tabindex="1">
+          <span class="account-user__name acc-text-formatted" tabindex="1"
             >Андрей Смолов</span
           >
-          <span class="account-user__mail acc-text-formatted"
+          <span class="account-user__mail acc-text-formatted" tabindex="1"
             >rsuejob@gmail.comdsfdsfsdfsdfsdfsdfdsffsdf</span
           >
           <a href="#" class="account-user__lk">Личный кабинет</a>
@@ -47,6 +48,7 @@ export default {
   background-color: white
   border-top-right-radius: 5px
   border-top-left-radius: 5px
+  outline: none
   .acc-header-for-auth
     display: flex
   .acc-header-for-noauth
@@ -65,23 +67,28 @@ export default {
     border-radius: 50%
     min-width: 40px
     margin-right: 1rem
+    outline: none
   .account-user-wrap
     display: flex
     min-width: 0
     flex-direction: column
+    outline: none
   .account-user__name
     font-family: $medium
     font-size: 1.1em
     line-height: 1
+    outline: none
   .account-user__mail
     font-size: .9em
     color: $grey-for-text
+    outline: none
   .account-user__lk
     display: block
     font-size: .9em
     color: $accent
     margin-top: .5rem
     line-height: 1
+    outline: none
   .acc-text-formatted
     text-overflow: ellipsis
     overflow: hidden
