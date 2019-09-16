@@ -1,10 +1,19 @@
 <template>
   <nav class="header-nav-links">
+    <a href="" class="header-nav__link header-nav__link_mobile">1</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">2</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">3</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">4</a>
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
     <a href="" class="header-nav__link header-nav__link_mobile"
       >Мое расписание</a
     >
     <a href="" class="header-nav__link header-nav__link_special">Моя группа</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">5</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">6</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">7</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">8</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">9</a>
     <a href="" class="header-nav__link header-nav__link_special logout">
       Выход
     </a>

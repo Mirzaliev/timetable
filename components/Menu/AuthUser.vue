@@ -38,6 +38,9 @@ export default {
         }
         const eventTarget = e.target
         const eventParent = e.target.offsetParent
+        if (!eventParent) {
+          return 0
+        }
         if (
           eventParent.classList.contains('account-dropdown') ||
           eventTarget.classList.contains('account-dropdown')
@@ -53,9 +56,15 @@ export default {
   },
   methods: {
     openAccountMenu() {
+      console.log('openAccountMenu')
       this.$refs.accountDropdown.classList.add('account-dropdown_shown')
     },
     closeAccountMenu() {
+      if (
+        !this.$refs.accountDropdown.classList.contains('account-dropdown_shown')
+      ) {
+        return 0
+      }
       this.$refs.accountDropdown.classList.remove('account-dropdown_shown')
     }
   }

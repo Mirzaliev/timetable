@@ -57,13 +57,11 @@ export default {
     },
     openedMobileMenu() {
       const drawer = document.getElementsByClassName('mobile-drawer')
-      const drawerContent = drawer[0].children[1].children[0]
-      const dhh = drawerContent.children[0].offsetHeight // drawer header height
-      const ac = drawerContent.children[1].children[0].children[0].offsetHeight // account header
-      const navMenu = drawerContent.children[1].children[0].children[1]
-      const navMenuHeight = drawerContent.offsetHeight - (dhh + ac)
-      navMenu.style.height = navMenuHeight
-      console.log(navMenuHeight)
+      const drawerContent = drawer[0].children[1]
+      const dch = drawerContent.offsetHeight
+      const dhh = drawerContent.children[0].children[0].offsetHeight
+      const drawerBody = drawerContent.children[0].children[1].children[0]
+      drawerBody.style.maxHeight = `${dch - dhh}px`
     }
   }
 }
