@@ -83,7 +83,6 @@ export default {
   display: flex
   width: 100%
   min-height: 0
-  max-height: 600px
   flex-direction: column
 @include respond-below(phone)
   .header-mm
