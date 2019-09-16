@@ -1,7 +1,7 @@
 <template>
   <div class="header-user">
-    <div v-if="auth" class="header-user-auth account">
-      <a href="#" class="account__avatar" @click="openAccountMenu">
+    <div v-if="auth" class="header-user-auth account" tabindex="1">
+      <a href="#" class="account__avatar">
         <span
           class="account__avatar_bg"
           style="background-image: url(https://peopletalk.ru/wp-content/uploads/2016/11/1480331127.jpg)"
@@ -27,47 +27,7 @@ export default {
       accountDropdownshow: false
     }
   },
-  mounted() {
-    const self = this
-    window.addEventListener(
-      'click',
-      function(e) {
-        if (e.path.length === 3) {
-          self.closeAccountMenu()
-          return 0
-        }
-        const eventTarget = e.target
-        const eventParent = e.target.offsetParent
-        if (!eventParent) {
-          return 0
-        }
-        if (
-          eventParent.classList.contains('account-dropdown') ||
-          eventTarget.classList.contains('account-dropdown')
-        ) {
-          return 0
-        }
-        if (!eventParent.classList.contains('account__avatar')) {
-          self.closeAccountMenu()
-        }
-      },
-      false
-    )
-  },
-  methods: {
-    openAccountMenu() {
-      console.log('openAccountMenu')
-      this.$refs.accountDropdown.classList.add('account-dropdown_shown')
-    },
-    closeAccountMenu() {
-      if (
-        !this.$refs.accountDropdown.classList.contains('account-dropdown_shown')
-      ) {
-        return 0
-      }
-      this.$refs.accountDropdown.classList.remove('account-dropdown_shown')
-    }
-  }
+  methods: {}
 }
 </script>
 
@@ -86,6 +46,13 @@ export default {
 .header-user-auth
   margin-left: 1.5rem
   position: relative
+  &:focus-within
+    .account-dropdown
+      visibility: visible!important
+      opacity: 1!important
+      filter: none!important
+      top: 120%!important
+      pointer-events: auto!important
 .account__avatar
     display: block
     position: relative
@@ -104,6 +71,7 @@ export default {
       background-repeat: no-repeat
       background-size: cover
       border-radius: 10em
+
     &:hover
       transform: scale(1)
       border-color: $accent
