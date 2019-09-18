@@ -35,11 +35,11 @@ export default {
   mounted() {},
   methods: {
     openAccountMenu() {
-      console.log('openAccountMenu')
+      // console.log('openAccountMenu')
       this.$refs.accountDropdown.classList.add('account-dropdown_shown')
     },
     closeAccountMenu(e) {
-      console.log(e)
+      // console.log(e)
       this.$refs.accountDropdown.classList.remove('account-dropdown_shown')
     }
   }

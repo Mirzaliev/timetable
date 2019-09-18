@@ -36,3 +36,37 @@ $breakpoints: (
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }
+
+
+// @include respond-between(sm, md) {}
+@mixin respond-between($lower) {
+
+  // If both the lower and upper breakpoints exist in the map.
+  @if map-has-key($breakpoints, $lower) {
+
+    // Get the lower and upper breakpoints.
+    $lower-breakpoint: map-get($breakpoints, $lower);
+
+    // Write the media query.
+    @media (min-width: $lower-breakpoint) {
+      @content;
+    }
+
+    // If one or both of the breakpoints don't exist.
+  } @else {
+
+    // If lower breakpoint is invalid.
+    @if (map-has-key($breakpoints, $lower) == false) {
+
+      // Log a warning.
+      @warn 'Your lower breakpoint was invalid: #{$lower}.';
+    }
+
+    // If upper breakpoint is invalid.
+    @if (map-has-key($breakpoints, $upper) == false) {
+
+      // Log a warning.
+      @warn 'Your upper breakpoint was invalid: #{$upper}.';
+    }
+  }
+}

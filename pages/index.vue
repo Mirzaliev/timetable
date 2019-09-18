@@ -2,8 +2,8 @@
   <section class="index-section searchPage">
     <div class="searchPage-container">
       <div class="searchPage-search-wrap">
-        <div class="searchPage__title">ПОИСК</div>
         <form action="GET" class="searchPage-form">
+          <div class="searchPage__title">ПОИСК</div>
           <v-select
             label="name"
             :filterable="false"
@@ -15,9 +15,7 @@
               По запросу ничего не найдено...
             </template>
             <template slot="option" slot-scope="option">
-              <div class="d-center">
-                {{ option.full_name }}
-              </div>
+              {{ option.full_name }}
             </template>
             <template slot="open-indicator">
               <svg
@@ -40,8 +38,26 @@
             >Например: ПИ, Иванова, Андр, ауд, 382, 811..</span
           >
         </form>
+        <div class="searchPage-hintDown">
+          <span class="searchPage-hintDown__hint">Или так</span>
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            class="searchPage-hintDown__icon"
+            viewBox="0 0 129 129"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            enable-background="new 0 0 129 129"
+          >
+            <g>
+              <path
+                d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
+              />
+            </g>
+          </svg>
+        </div>
       </div>
       <div class="searchPage-tabs-wrap">
+        <span>Факультеты</span>
         <pre> {{ json.owner }}</pre>
       </div>
     </div>
@@ -90,30 +106,38 @@ export default {
   width: 100%
 .searchPage-form
   &__hint
+    display: block
     font-size: .9em
     color: $grey-for-text
-    line-height: 1.1
+    line-height: 2
     text-overflow: ellipsis
+    overflow: hidden
     white-space: nowrap
     padding-left: 1.2rem
 .searchPage-tabs-wrap
   margin: 3rem 0
 .searchPage-container
-  width: 600px
+  width: 100%
   margin: 0 auto
   padding: 0 1rem
 .searchPage-search-wrap
   margin-top: 12rem
+.searchPage-hintDown
+  display: none
+  &__hint
+    flex: 1
+  &__icon
+    width: .8rem
 .searchPage
   &__title
     width: 100%
     font-family: $medium
-    font-size: 5rem
+    font-size: 3.3em
     line-height: 1.1
     text-align: center
     word-wrap: break-word
     white-space: nowrap
-    margin-bottom: 3rem
+    margin-bottom: 2.8rem
 .searchPage
   .v-select
     position: relative
@@ -121,7 +145,8 @@ export default {
     .vs__dropdown-toggle
       display: flex
       border-radius: 24px
-      box-shadow: none
+      box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
+      border-color: rgba(223,225,229,0)
       z-index: 3
       height: 47px
       margin: 0 auto
@@ -155,9 +180,6 @@ export default {
         border-right: 0.5em solid rgba(100, 100, 100, 0.1)
         border-bottom: 0.5em solid rgba(100, 100, 100, 0.1)
         border-left: 0.5em solid $accent
-  .vs__dropdown-toggle:hover
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
-    border-color: rgba(223,225,229,0)
   .vs--loading
     .vs__actions
       svg.vs__actions_icon
@@ -169,18 +191,19 @@ export default {
     border-bottom-left-radius: 24px
     border-bottom-right-radius: 24px
     box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28)
+  .vs__no-options
+    padding-bottom: 0!important
+  .vs__dropdown-option
+    padding: .3rem 1.2rem
+    word-break: break-word
+    text-overflow: ellipsis
+    &:last-child
+      margin-bottom: 1rem
+    &--highlight
+      background-color: $accent
+  .vs__actions_icon
+    fill: $accent
   .vs__dropdown-toggle
-    border-bottom-left-radius: 0
-    border-bottom-right-radius: 0
-    border-bottom: 1px solid rgba(60, 60, 60, 0.26)
-@include respond-below(phone)
-  .searchPage-search-wrap
-    margin-top: 5rem
-  .searchPage__title
-    font-size: 4rem
-  .searchPage-container
-    width: 405px
-    padding: 0 .5rem
-  .searchPage-tabs-wrap
-    overflow: auto
+    border-radius: 24px 24px 0 0
+@import "../assets/sass/pages/index-media"
 </style>

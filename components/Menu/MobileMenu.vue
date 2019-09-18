@@ -13,6 +13,8 @@
     <client-only>
       <vue-drawer
         :visible.sync="visible"
+        :filterable="false"
+        :clearable="false"
         class="mobile-drawer"
         title="Расписание РГЭУ (РИНХ)"
         width="100%"

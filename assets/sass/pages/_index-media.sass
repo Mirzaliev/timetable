@@ -1,0 +1,52 @@
+@include respond-below(phone)
+  .searchPage-search-wrap
+    margin-top: 0!important
+    height: 100%
+    display: flex
+    flex-direction: column
+    .searchPage-form
+      flex: 1 0 auto
+      display: flex
+      flex-direction: column
+      justify-content: center
+      .vs__dropdown-toggle
+        height: 38px
+      .vs__search
+        font-size: 1em
+      .vs__dropdown-menu
+        font-size: 1em
+    .searchPage-hintDown
+      flex: 0 0 auto
+      display: flex
+      flex-direction: column
+      align-items: center
+  .searchPage__title
+    font-size: 2rem!important
+    margin-bottom: 1rem!important
+  .searchPage-tabs-wrap
+    margin: 0
+    padding: 3rem 0
+    background-color: #41b883
+@include respond-below(tablet)
+  .searchPage
+@include respond-below(lg)
+  .searchPage
+    .searchPage-search-wrap
+      margin-top: 8rem
+    .searchPage__title
+      margin-bottom: 1.5rem
+      font-size: 2.8em
+// Толлько для контейнера
+@include respond-between(phone)
+  .searchPage-container
+    max-width: 580px
+    padding: 0 .5rem
+@include respond-between(tablet)
+  .searchPage-container
+    max-width: 600px
+@include respond-between(laptop)
+  .searchPage-container
+    max-width: 600px
+@include respond-between(lg)
+  .searchPage-container
+    max-width: 600px
