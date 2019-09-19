@@ -28,9 +28,11 @@ export default {
   position: relative
 .header
   width: 100%
+  height: 9vh
   display: flex
   align-items: center
-  padding: 1.5rem 6rem
+  justify-content: center
+  padding: 0 6rem
   border-bottom: 1px solid $color-for-border
   &-logo
     width: 30%
@@ -53,7 +55,7 @@ export default {
     padding: 1.1rem 1rem
     flex-direction: column
     &-logo
-      margin-bottom: 1rem
+      margin-bottom: .5rem
       width: 100%!important
       text-align: center
     &-nav
@@ -61,7 +63,7 @@ export default {
       justify-content: space-between
 @include respond-below(phone)
   .header
-    padding: 1.2rem .9rem!important
+    padding: 0 .9rem!important
     flex-direction: row
     &-logo
       margin-bottom: 0
@@ -84,9 +86,16 @@ export default {
         &:before, &:after
           width: 33px
           height: 2px
+@include respond-below(phone)
+  .main-container > .header
+    height: 9vh!important
+@include respond-below(laptop)
+  .main-container > .header
+    height: 11vh
 @include respond-below(lg)
   .header
-    padding: 1.5rem 3rem
+    padding: 0 3rem
+    height: 6vh
   .header-logo
     width: 35%
   .header-nav
