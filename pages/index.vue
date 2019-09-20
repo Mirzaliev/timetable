@@ -35,7 +35,7 @@
             </template>
           </v-select>
           <span class="searchPage-form__hint"
-            >Например: ПИ, Иванова, Андр, ауд, 382, 811..</span
+            >22Например: ПИ, Иванова, Андр, ауд, 382, 811..</span
           >
         </form>
         <div class="searchPage-hintDown">
@@ -58,7 +58,9 @@
       </div>
       <div class="searchPage-tabs-wrap">
         <span>Факультеты</span>
-        <pre> {{ json.owner }}</pre>
+        <pre style="overflow: auto; max-width: 100%; max-height: 80vh">
+ {{ json.owner }}</pre
+        >
       </div>
     </div>
   </section>

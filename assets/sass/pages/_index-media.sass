@@ -1,8 +1,8 @@
 @include respond-below(phone)
   .searchPage-search-wrap
     margin-top: 0!important
-    height: calc(100vh - 9vh)
     display: flex
+    height: calc((var(--vh100, 1vh) * 100) - 9vh)
     flex-direction: column
     .searchPage-form
       flex: 1 0 auto

@@ -19,6 +19,17 @@ export default {
     'nav-links': () => import('~/components/Menu/NavLinks.vue'),
     'auth-user': () => import('~/components/Menu/AuthUser.vue'),
     'mobile-menu': () => import('~/components/Menu/MobileMenu.vue')
+  },
+  mounted() {
+    const vh = window.innerHeight * 0.01
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      const vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh100', `${vh}px`)
+    })
   }
 }
 </script>
