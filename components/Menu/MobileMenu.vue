@@ -10,7 +10,14 @@
         <span class="hamburger-inner"></span>
       </span>
     </button>
-    <modal name="hello-world">
+    <modal
+      name="hello-world"
+      width="100%"
+      height="58%"
+      :adaptive="true"
+      pivot-y="1"
+      @closed="$refs.openMobileMenuBut.classList.remove('is-active')"
+    >
       <user-account-menu></user-account-menu>
     </modal>
   </div>
@@ -30,6 +37,7 @@ export default {
   methods: {
     openMobileMenu() {
       this.$modal.show('hello-world')
+      this.$refs.openMobileMenuBut.classList.add('is-active')
     }
   }
 }
