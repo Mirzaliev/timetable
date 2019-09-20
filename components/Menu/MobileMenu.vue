@@ -15,7 +15,9 @@
       width="100%"
       height="58%"
       :adaptive="true"
-      pivot-y="1"
+      :pivot-y="1"
+      @before-open="$refs.openMobileMenuBut.classList.add('is-active')"
+      @opened="mobileMenuOpened"
       @closed="$refs.openMobileMenuBut.classList.remove('is-active')"
     >
       <user-account-menu></user-account-menu>
@@ -37,7 +39,10 @@ export default {
   methods: {
     openMobileMenu() {
       this.$modal.show('hello-world')
-      this.$refs.openMobileMenuBut.classList.add('is-active')
+      console.log(this.$refs)
+    },
+    mobileMenuOpened() {
+      document.getElementById('bodyPage').classList.add('body_overflowHidden')
     }
   }
 }

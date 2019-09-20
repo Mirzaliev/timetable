@@ -14,6 +14,9 @@ module.exports = {
         content: process.env.npm_package_description || ''
       }
     ],
+    bodyAttrs: {
+      id: 'bodyPage'
+    },
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
