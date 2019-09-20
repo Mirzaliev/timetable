@@ -10,24 +10,9 @@
         <span class="hamburger-inner"></span>
       </span>
     </button>
-    <client-only>
-      <vue-drawer
-        :visible.sync="visible"
-        :filterable="false"
-        :clearable="false"
-        class="mobile-drawer"
-        title="Расписание РГЭУ (РИНХ)"
-        width="100%"
-        height="80%"
-        placement="bottom"
-        :mask-closeable="true"
-        :show-close="true"
-        :before-close="beforeClose"
-        @opened="openedMobileMenu"
-      >
-        <user-account-menu></user-account-menu>
-      </vue-drawer>
-    </client-only>
+    <modal name="hello-world">
+      <user-account-menu></user-account-menu>
+    </modal>
   </div>
 </template>
 
@@ -44,26 +29,7 @@ export default {
   },
   methods: {
     openMobileMenu() {
-      const buttonClassList = this.$refs.openMobileMenuBut.classList
-      if (buttonClassList.contains('is-active')) {
-        buttonClassList.remove('is-active')
-        this.visible = false
-        return
-      }
-      buttonClassList.add('is-active')
-      this.visible = true
-    },
-    beforeClose() {
-      this.visible = false
-      this.$refs.openMobileMenuBut.classList.remove('is-active')
-    },
-    openedMobileMenu() {
-      const drawer = document.getElementsByClassName('mobile-drawer')
-      const drawerContent = drawer[0].children[1]
-      const dch = drawerContent.offsetHeight
-      const dhh = drawerContent.children[0].children[0].offsetHeight
-      const drawerBody = drawerContent.children[0].children[1].children[0]
-      drawerBody.style.maxHeight = `${dch - dhh - 3}px`
+      this.$modal.show('hello-world')
     }
   }
 }
@@ -76,20 +42,6 @@ export default {
 .header-mm__hamburger
   outline: 0
   border: none
-.mobile-drawer
-  .acc-menu
-    .header-nav-links
-      .header-nav__link_mobile
-        display: block
-  .drawer-header
-    display: none
-.drawer-body > div
-  display: flex
-  width: 100%
-  min-height: 0
-  flex-direction: column
-  .acc-header
-    padding: 1.4rem 1rem
 @include respond-below(phone)
   .header-mm
     display: block

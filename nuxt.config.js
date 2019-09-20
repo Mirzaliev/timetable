@@ -27,7 +27,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/vue-drawer.js', ssr: false }],
+  plugins: ['~plugins/vue-js-modal'],
   /*
    ** Nuxt.js dev-modules
    */
