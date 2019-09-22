@@ -1,0 +1,60 @@
+// Здесь общие медиа-запросы
+@include respond-between(phoneMin, phone)
+  .header
+    padding: 0 .9rem!important
+    justify-content: space-between
+    height: 9vh
+    &__logo
+      font-size: 1.1em
+      margin-right: 0
+    &-nav
+      width: auto
+    &-nav-links , &-user
+      display: none
+    .header-mm__hamburger
+      padding: 0
+      .hamburger-box
+        width: 33px
+        height: 10px
+      .hamburger-inner
+        width: 33px
+        height: 2px
+        &:before, &:after
+          width: 33px
+          height: 2px
+@include respond-between(phone, tablet)
+  .header
+    padding: .5rem 1rem
+    flex-direction: column
+    height: 11vh
+    &-logo
+      margin-bottom: .5rem
+      width: 100%
+      text-align: center
+    &-nav
+      width: 100%
+      justify-content: space-between
+      &-links
+        margin-left: 0 !important
+        width: 70% !important
+        text-align: left !important
+@include respond-between(tablet, laptop)
+  .header
+    height: 10vh
+@include respond-between(laptop, laptopL)
+  .header
+    height: 13vh
+@include respond-between(laptopL, lg)
+  .header
+    height: 10vh
+@include respond-between(tablet, lg)
+  .header
+    padding: 0 3rem
+    &-logo
+      width: 35%
+    &-nav
+      width: 65%     
+@media (orientation: landscape) and (max-width: 767px)
+  .header
+    height: 10vh
+  

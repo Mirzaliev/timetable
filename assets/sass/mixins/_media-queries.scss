@@ -4,10 +4,12 @@
 
 // A map of breakpoints.
 $breakpoints: (
-        phone: 576px,
-        tablet: 769px,
-        laptop: 993px,
-        lg: 1269px
+        phoneMin: 319.99px,
+        phone: 576.99px,
+        tablet: 768.99px,
+        laptop: 1024.99px,
+        laptopL: 1440.99px,
+        lg: 2560px,
 );
 
 //
@@ -38,21 +40,21 @@ $breakpoints: (
 }
 
 
-// @include respond-between(sm, md) {}
-@mixin respond-between($lower) {
+@mixin respond-between($lower, $upper) {
 
   // If both the lower and upper breakpoints exist in the map.
-  @if map-has-key($breakpoints, $lower) {
+  @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
 
     // Get the lower and upper breakpoints.
     $lower-breakpoint: map-get($breakpoints, $lower);
+    $upper-breakpoint: map-get($breakpoints, $upper);
 
     // Write the media query.
-    @media (min-width: $lower-breakpoint) {
+    @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
       @content;
     }
-
-    // If one or both of the breakpoints don't exist.
+  
+  // If one or both of the breakpoints don't exist.
   } @else {
 
     // If lower breakpoint is invalid.

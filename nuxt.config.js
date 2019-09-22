@@ -1,5 +1,9 @@
 module.exports = {
   mode: 'universal',
+  server: {
+    port: 3000, // default: 3000
+    host: '192.168.0.106' // default: localhost
+  },
   /*
    ** Headers of the page
    */
@@ -30,7 +34,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~plugins/vue-js-modal'],
+  plugins: [
+    '~plugins/vue-js-modal',
+    { src: '~/plugins/popover.js', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

@@ -1,11 +1,6 @@
 <template>
   <div class="header-user">
-    <div
-      v-if="auth"
-      class="header-user-auth account"
-      @focusout="closeAccountMenu"
-      @focusin="openAccountMenu"
-    >
+    <div v-if="auth" ref="_openAccounMenu" class="header-user-auth account">
       <a href="#" class="account__avatar">
         <span
           class="account__avatar_bg"
@@ -32,10 +27,14 @@ export default {
       accountDropdownshow: false
     }
   },
-  mounted() {},
+  mounted() {
+    const _openAccounMenu = this.$refs._openAccounMenu
+    _openAccounMenu.addEventListener('mousedown', this.closeAccountMenu)
+    _openAccounMenu.addEventListener('mouseup', this.openAccountMenu)
+  },
   methods: {
     openAccountMenu() {
-      // console.log('openAccountMenu')
+      console.log('openAccountMenu')
       this.$refs.accountDropdown.classList.add('account-dropdown_shown')
     },
     closeAccountMenu(e) {

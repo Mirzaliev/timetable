@@ -1,6 +1,7 @@
 <template>
   <nav class="header-nav-links">
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
+    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
     <a href="" class="header-nav__link header-nav__link_mobile"
       >Мое расписание</a
     >
@@ -45,7 +46,4 @@ export default {
       fill: $color-for-border
 .header-nav__link_special
   display: none
-@include respond-below(laptop)
-  .header-nav-links
-    margin-left: 0
 </style>
