@@ -30,6 +30,14 @@ export default {
       const vh = window.innerHeight * 0.01
       document.documentElement.style.setProperty('--vh100', `${vh}px`)
     })
+    window.addEventListener(
+      'orientationchange',
+      function() {
+        // Announce the new orientation number
+        alert(screen.orientation)
+      },
+      false
+    )
   }
 }
 </script>
