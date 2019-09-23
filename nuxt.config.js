@@ -1,9 +1,5 @@
 module.exports = {
   mode: 'universal',
-  server: {
-    port: 3000, // default: 3000
-    host: '192.168.0.106' // default: localhost
-  },
   /*
    ** Headers of the page
    */
