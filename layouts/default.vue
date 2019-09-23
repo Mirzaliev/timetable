@@ -21,23 +21,18 @@ export default {
     'mobile-menu': () => import('~/components/Menu/MobileMenu.vue')
   },
   mounted() {
-    const vh = window.innerHeight * 0.01
-    // Then we set the value in the --vh custom property to the root of the document
-    document.documentElement.style.setProperty('--vh100', `${vh}px`)
-    // We listen to the resize event
-    window.addEventListener('resize', () => {
-      // We execute the same script as before
-      const vh = window.innerHeight * 0.01
-      document.documentElement.style.setProperty('--vh100', `${vh}px`)
-    })
-    window.addEventListener(
-      'orientationchange',
-      function() {
-        // Announce the new orientation number
-        alert(screen.orientation)
-      },
-      false
-    )
+    this.calculateHeight()
+    window.addEventListener('resize', this.calculateHeight())
+    window.addEventListener('orientationchange', this.calculateHeight(), false)
+  },
+  methods: {
+    calculateHeight() {
+      const wh = window.innerHeight
+      const hh = document.getElementsByClassName('header')[0].offsetHeight
+      document.getElementsByClassName(
+        'searchPage-search-wrap'
+      )[0].style.height = `${wh - hh}px`
+    }
   }
 }
 </script>
