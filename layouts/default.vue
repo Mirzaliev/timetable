@@ -22,8 +22,16 @@ export default {
   },
   mounted() {
     this.calculateHeight()
-    window.addEventListener('resize', this.calculateHeight())
-    window.addEventListener('orientationchange', this.calculateHeight(), false)
+    window.addEventListener('resize', () => {
+      this.calculateHeight()
+    })
+    window.addEventListener(
+      'orientationchange',
+      () => {
+        this.calculateHeight()
+      },
+      false
+    )
   },
   methods: {
     calculateHeight() {
