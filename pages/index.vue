@@ -40,20 +40,7 @@
         </form>
         <div class="searchPage-hintDown">
           <span class="searchPage-hintDown__hint">Или так</span>
-          <svg
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            class="searchPage-hintDown__icon"
-            viewBox="0 0 129 129"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            enable-background="new 0 0 129 129"
-          >
-            <g>
-              <path
-                d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
-              />
-            </g>
-          </svg>
+          <svg-icon name="down-arrow" />
         </div>
       </div>
       <div class="searchPage-tabs-wrap">
@@ -104,33 +91,41 @@ export default {
 <style lang="sass">
 @import "../assets/sass/vars"
 @import "~vue-select/src/scss/vue-select.scss"
-.index-section
+.searchPage
   position: relative
   width: 100%
-.searchPage-form
-  &__hint
-    display: block
-    font-size: .9em
-    color: $grey-for-text
-    line-height: 2
-    text-overflow: ellipsis
-    overflow: hidden
-    white-space: nowrap
-    padding-left: 1.2rem
-.searchPage-tabs-wrap
-  margin: 3rem 0
-.searchPage-container
-  width: 100%
-  margin: 0 auto
-  padding: 0 1rem
-.searchPage-search-wrap
-  background-color: #fff4f4
-.searchPage-hintDown
-  display: none
-  &__hint
+  &-container
+    width: 40%
+    margin: 0 auto
+    padding: 0 1rem
+  &-search-wrap
+    display: flex
+    flex-direction: column
+  &-tabs-wrap
+    margin: 3rem 0
+  &-form
+    display: flex
     flex: 1
-  &__icon
-    width: .8rem
+    flex-direction: column
+    justify-content: center
+    background-color: #fff4f4
+    &__hint
+      display: block
+      font-size: .9em
+      color: $grey-for-text
+      line-height: 2
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+      padding-left: 1.2rem
+  &-hintDown
+    text-align: center
+    &__hint
+      display: block
+    .sprite-icons
+      width: 1rem
+      height: 1rem
+      animation: fadeInDown 2s ease infinite
 .searchPage
   &__title
     width: 100%
@@ -208,5 +203,6 @@ export default {
     fill: $accent
   .vs__dropdown-toggle
     border-radius: 24px 24px 0 0
+@import "../assets/sass/components/bounce-animate"
 @import "../assets/sass/pages/index-media"
 </style>

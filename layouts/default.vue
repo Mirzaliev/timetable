@@ -48,6 +48,7 @@ export default {
 @import "../assets/sass/vars"
 .main-container
   position: relative
+  height: 100%
 .header
   width: 100%
   display: flex
