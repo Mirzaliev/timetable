@@ -23,14 +23,16 @@ export default {
   },
   data() {
     return {
-      auth: true,
+      auth: false,
       accountDropdownshow: false
     }
   },
   mounted() {
-    const _openAccounMenu = this.$refs._openAccounMenu
-    _openAccounMenu.addEventListener('mousedown', this.closeAccountMenu)
-    _openAccounMenu.addEventListener('mouseup', this.openAccountMenu)
+    if (this.auth) {
+      const _openAccounMenu = this.$refs._openAccounMenu
+      _openAccounMenu.addEventListener('mousedown', this.closeAccountMenu)
+      _openAccounMenu.addEventListener('mouseup', this.openAccountMenu)
+    }
   },
   methods: {
     openAccountMenu() {
@@ -47,18 +49,18 @@ export default {
 
 <style lang="sass">
 @import "../../assets/sass/vars"
+.header-user
+  margin-left: 2.5rem
 .header-user__login
   display: block
   background-color: $accent
   padding: .8rem 2.5rem
-  margin-left: 2.5rem
   border-radius: 40px
   color: white
   &:hover
     background-color: lighten($accent, 10%)
     color: white
 .header-user-auth
-  margin-left: 1.5rem
   position: relative
   outline: none
 .account__avatar
@@ -140,7 +142,4 @@ export default {
     &:hover
       background-color: $background-hover
       color: inherit
-@include respond-below(laptop)
-  .header-user__login
-    font-size: .9em
 </style>

@@ -124,7 +124,7 @@ export default {
   margin: 0 auto
   padding: 0 1rem
 .searchPage-search-wrap
-  margin-top: 12rem
+  background-color: #fff4f4
 .searchPage-hintDown
   display: none
   &__hint

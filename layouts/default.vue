@@ -50,11 +50,10 @@ export default {
   position: relative
 .header
   width: 100%
-  height: 15vh
   display: flex
   align-items: center
-  justify-content: center
-  padding: 0 6rem
+  justify-content: space-between
+  padding: 1.5rem 6rem
   border-bottom: 1px solid $color-for-border
   &__logo
     display: block
@@ -66,8 +65,6 @@ export default {
   &-nav
     display: flex
     align-items: center
-    justify-content: flex-end
-    width: 70%
     .acc-text-formatted
       overflow: initial
 @import "../assets/sass/pages/default-media"

@@ -1,9 +1,8 @@
 <template>
   <nav class="header-nav-links">
     <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
-    <a href="" class="header-nav__link header-nav__link_mobile">Мои экзамены</a>
     <a href="" class="header-nav__link header-nav__link_mobile"
-      >Мое расписание</a
+      >Мои расписание</a
     >
     <a href="" class="header-nav__link header-nav__link_special">Моя группа</a>
     <a href="" class="header-nav__link header-nav__link_special logout">

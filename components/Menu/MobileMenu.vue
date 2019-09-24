@@ -57,26 +57,20 @@ export default {
 @import "../../assets/sass/vars"
 .header-mm
   display: none
+  .v--modal
+    border-radius: 0
 .header-mm__hamburger
   outline: 0
   border: none
-@include respond-below(phone)
-  .header-mm
-    display: block
-  .drawer-body > div > .header-nav-links
-    display: flex
-    flex-direction: column
-    text-align: left
-    padding: .3rem
-    overflow-x: hidden
-    overflow-y: auto
-    height: 100%
-    .header-nav__link
-      padding: .5rem 1rem
-      &:first-child
-        background-color: #3b8070
-      &:last-child
-        background-color: #3b8070
-      &_special
-        display: block
+.header-mm__hamburger
+  padding: 0
+  .hamburger-box
+    width: 33px
+    height: 10px
+  .hamburger-inner
+    width: 33px
+    height: 2px
+    &:before, &:after
+      width: 33px
+      height: 2px
 </style>

@@ -53,7 +53,7 @@ $breakpoints: (
     @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
       @content;
     }
-  
+
   // If one or both of the breakpoints don't exist.
   } @else {
 
@@ -69,6 +69,85 @@ $breakpoints: (
 
       // Log a warning.
       @warn 'Your upper breakpoint was invalid: #{$upper}.';
+    }
+  }
+}
+
+@mixin respond($media){
+  @if $media == laptop {
+    @media screen and (min-device-width: 1366px) and (max-device-width: 1566px)and (-webkit-min-device-pixel-ratio: 1) {
+      @content
+    }
+  }
+    // Многие планшеты
+  @else if $media == allmostAllLargeTabletPortain {
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+      @content
+    }
+  }
+  @else if $media == allmostAllTabletPortain {
+    @media (min-device-width: 768px) and (max-device-width: 1023px){
+      @content
+    }
+  }
+  @else if $media == allmostAllPhonePortain {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+      @content
+    }
+  }
+  @else if $media == allmostAllPhoneLandscape {
+    @media only screen and (min-device-width: 480px) and (max-device-width: 768px) and (orientation: landscape)   {
+      @content
+    }
+  }
+   // Отдельно
+  @else if $media == ipadPro12 {
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+      @content
+    }
+  }
+  @else if $media == ipadPro12-portain {
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+      @content
+    }
+  }
+
+  @else if $media == ipadPro12-landscape {
+    @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+      @content
+    }
+  }
+
+  @else if $media == ipadPro9 {
+    @media (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 2) {
+      @content
+    }
+  }
+
+  @else if $media == ipadPro9-portain {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 800px) and (orientation: portrait)  and (-webkit-min-device-pixel-ratio: 2) {
+      @content
+    }
+  }
+  @else if $media == ipadPro9-landscape {
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1200px)  and (orientation: landscape)  and (-webkit-min-device-pixel-ratio: 2) {
+      @content
+    }
+  }
+
+  @else if $media == galaxyTab2 {
+    @media  (min-device-width: 800px) and (max-device-width: 1280px) {
+      @content
+    }
+  }
+  @else if $media == galaxyTab2-portain {
+    @media (min-device-width: 800px) and (orientation: portrait) {
+      @content
+    }
+  }
+  @else if $media == galaxyTab2-landscape {
+    @media (max-device-width: 1280px) and (orientation: landscape){
+      @content
     }
   }
 }

@@ -1,9 +1,42 @@
 // Здесь общие медиа-запросы
-@include respond-between(phoneMin, phone)
+@include respond(laptop)
   .header
-    padding: 0 .9rem!important
+    padding: 1.5rem 4rem
+@include respond(allmostAllLargeTabletPortain)
+  .header
+    padding: 1.4rem 2.5rem
+@include respond(allmostAllTabletPortain)
+  .header
+    padding: 1.2rem 1.7rem
+    .header-user
+      margin-left: 1.5rem
+    .header__logo
+      font-size: 1.3em
+    .header-nav__link
+      font-size: .98em
+    .header-user__login
+      padding: .7rem 1.7rem
+      font-size: .99em
+@include respond(allmostAllPhonePortain)
+  .header
+    background-color: #81d4fa
+    padding: 1.1rem 1.5rem
     justify-content: space-between
-    height: 9vh
+    .header-mm
+      display: block
+      .header-nav-links
+        display: flex
+        flex-direction: column
+        padding: .8rem 0
+        text-align: left
+        margin-left: 0
+        .header-nav__link_special
+          display: block
+        .header-nav__link
+          padding: .5rem 1.2rem
+          border-bottom: 1px solid $color-for-border
+          &:last-child
+            border-bottom: none
     &__logo
       font-size: 1.1em
       margin-right: 0
@@ -11,50 +44,18 @@
       width: auto
     &-nav-links , &-user
       display: none
-    .header-mm__hamburger
-      padding: 0
-      .hamburger-box
-        width: 33px
-        height: 10px
-      .hamburger-inner
-        width: 33px
-        height: 2px
-        &:before, &:after
-          width: 33px
-          height: 2px
-@include respond-between(phone, tablet)
+
+@include respond(allmostAllPhoneLandscape)
   .header
-    padding: .5rem 1rem
-    flex-direction: column
-    height: 11vh
-    &-logo
-      margin-bottom: .5rem
-      width: 100%
-      text-align: center
-    &-nav
-      width: 100%
-      justify-content: space-between
-      &-links
-        margin-left: 0 !important
-        width: 70% !important
-        text-align: left !important
-@include respond-between(tablet, laptop)
-  .header
-    height: 10vh
-@include respond-between(laptop, laptopL)
-  .header
-    height: 13vh
-@include respond-between(laptopL, lg)
-  .header
-    height: 10vh
-@include respond-between(tablet, lg)
-  .header
-    padding: 0 3rem
-    &-logo
-      width: 35%
-    &-nav
-      width: 65%     
-@media (orientation: landscape) and (max-width: 767px)
-  .header
-    height: 10vh
-  
+    background-color: #fa2537
+    padding: .8rem 1.5rem
+    .header-nav
+      .header-mm
+        .v--modal-background-click
+          height: 100%!important
+        .v--modal-box
+          top: 0!important
+          height: 100%!important
+          width: 70%!important
+
+
