@@ -4,6 +4,7 @@ Site for viewing the schedule of Rostov State Economic University
 
 
 Created with [Browserstack](https://www.browserstack.com/)
+
 ![Alt text](Browserstack-logo@2x.png "Browserstack Logo")
 
 
@@ -13,7 +14,7 @@ Created with [Browserstack](https://www.browserstack.com/)
 - Sass
 
 ## Server
- Django
+- Django
  
  
 How to start?
