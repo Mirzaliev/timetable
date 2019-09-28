@@ -108,7 +108,6 @@ export default {
     flex: 1
     flex-direction: column
     justify-content: center
-    background-color: #fff4f4
     &__hint
       display: block
       font-size: .9em

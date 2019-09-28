@@ -19,7 +19,6 @@
       font-size: .99em
 @include respond(allmostAllPhonePortain)
   .header
-    background-color: #81d4fa
     padding: 1.1rem 1.5rem
     justify-content: space-between
     .header-mm
@@ -44,10 +43,16 @@
       width: auto
     &-nav-links , &-user
       display: none
-
+  .searchPage
+    .searchPage-container
+      width: 100%
+      padding: 0 .7rem
+    .searchPage-tabs-wrap
+      padding: .7rem
+      margin: 0
+      background-color: #81d4fa
 @include respond(allmostAllPhoneLandscape)
   .header
-    background-color: #fa2537
     padding: .8rem 1.5rem
     .header-nav
       .header-mm
@@ -57,5 +62,8 @@
           top: 0!important
           height: 100%!important
           width: 70%!important
-
+  .searchPage
+    .searchPage-container
+      width: 80%
+      padding: 0 .7rem
 
