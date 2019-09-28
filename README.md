@@ -1,9 +1,23 @@
-# timetable
 
-> My striking Nuxt.js project
+Site for viewing the schedule of Rostov State Economic University
 
-## Build Setup
 
+
+Created with [Browserstack](https://www.browserstack.com/)
+
+![Alt text](Browserstack-logo@2x.png "Browserstack Logo")
+
+
+
+## frontend
+- NUXT.JS
+- Sass
+
+## Server
+- Django
+ 
+ 
+How to start?
 ``` bash
 # install dependencies
 $ npm run install
@@ -11,12 +25,7 @@ $ npm run install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
