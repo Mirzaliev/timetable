@@ -44,10 +44,7 @@
         </div>
       </div>
       <div class="searchPage-tabs-wrap">
-        <span>Факультеты</span>
-        <pre style="overflow: auto; max-width: 100%; max-height: 80vh">
- {{ json.owner }}</pre
-        >
+        <tabs></tabs>
       </div>
     </div>
   </section>
@@ -58,7 +55,8 @@ import vSelect from 'vue-select'
 
 export default {
   components: {
-    vSelect
+    vSelect,
+    tabs: () => import('~/components/index/Tabs.vue')
   },
   data() {
     return {
