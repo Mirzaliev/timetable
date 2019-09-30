@@ -3,6 +3,10 @@ module.exports = {
   /*
    ** Headers of the page
    */
+  // server: {
+  //   host: '127.0.0.1',
+  //   port: 8080
+  // },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
