@@ -22,9 +22,9 @@ export default {
   },
   mounted() {
     this.calculateHeight()
-    window.addEventListener('resize', () => {
-      this.calculateHeight()
-    })
+    // window.addEventListener('resize', () => {
+    //   this.calculateHeight()
+    // })
     window.addEventListener(
       'orientationchange',
       () => {
