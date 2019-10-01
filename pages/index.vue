@@ -100,7 +100,7 @@ export default {
     display: flex
     flex-direction: column
   &-tabs-wrap
-    margin: 3rem 0
+   // margin: 3rem 0
   &-form
     display: flex
     flex: 1

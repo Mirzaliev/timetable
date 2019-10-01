@@ -1,537 +1,1048 @@
 {
-   "faculties": [
-     {
-       "title": "",
-       "shortName": ""
-     }
-   ],
-  "timetable" : [
+  "faculties": [
+    {
+      "title": "МиП",
+      "shortName": "Факультет Менеджмента и предпринимательства"
+    },
+    {
+      "title": "ТД",
+      "shortName": "Факультет Торгового дела"
+    },
+    {
+      "title": "КТиИБ",
+      "shortName": "Факультет Компьютерных технологий и информационной безопасности"
+    },
+    {
+      "title": "УЭФ",
+      "shortName": "Учетно-экономический факультет"
+    },
+    {
+      "title": "ЭиФ",
+      "shortName": "Факультет Экономики и финансов"
+    },
+    {
+      "title": "ЮрФак",
+      "shortName": "Юридический факультет"
+    },
+    {
+      "title": "ЛиЖ",
+      "shortName": "Факультет Лингвистики и журналистики"
+    }
+  ],
+  "timetable": [
     {
       "group": "321-ИСТ",
+      "week": "even",
       "groupTimetable": [
         {
-          "day": "Понедельник",
-          "lessons": [
+          "date": "7.10.2019",
+          "dateTimetable": [
             {
               "time": "10:10 — 11:40",
-              "title": "Правоведение",
-              "teacher": "доц.Ганичев И.В.",
-              "type": "Лекция",
-              "classroom": "ауд.605"
-            },
-            {
-              "time": "10:10 — 11:40",
-              "lesson": {},
-              "type": "Лекция",
-              "classroom": "ауд.605"
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Дискретная математика",
+                  "teacher": "доц.Алексейчик Т.В.",
+                  "teacherFullName": "доц.Алексейчик Т.В.",
+                  "type": "Лекция",
+                  "classroom": "ауд.313"
+                }
+              ]
             },
             {
               "time": "11:50 — 13:20",
-              "title": "Иностранный язык",
-              "teacher": "ст.пр.Рачинская Н.В.",
-              "type": "Практика",
-              "classroom": "ауд.527"
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Туриченко Л.П.",
+                  "teacherFullName": "ст.пр.Туриченко Л.П.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "8.10.2019",
+          "dateTimetable": [
+            {
+              "time": "8:30 — 10:00",
+              "lessonNumber": 1,
+              "lessons": [
+                {
+                  "title": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Глушенко С.А.",
+                  "teacherFullName": "доц.Глушенко С.А.",
+                  "type": "Лекция",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Проектирование баз данных",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
             },
             {
               "time": "13:50 — 15:20",
-              "title": "Философия",
-              "teacher": "доц.Поломошнов П.А.",
-              "type": "Лекция",
-              "classroom": "ауд.605"
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "NN-препод.",
+                  "teacherFullName": "NN-препод.",
+                  "type": "Практика",
+                  "classroom": "ауд.сз"
+                }
+              ]
             }
           ]
         },
         {
-          "day": "Вторник",
-          "lessons": [
-            {
-              "time": "8:30 — 10:00 ",
-              "title": "Иностранный язык",
-              "teacher": "ст.пр.Ступникова Н.А.",
-              "type": "Практика",
-              "classroom": "ауд.311"
-            },
+          "date": "9.10.2019",
+          "dateTimetable": [
             {
               "time": "10:10 — 11:40",
-              "title": "Проектирование баз данных",
-              "teacher": "проф.Щербаков С.М.",
-              "type": "Лекция",
-              "classroom": "ауд.302"
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Практика",
+                  "classroom": "ауд.653"
+                }
+              ]
             },
             {
-              "time": "8:30 — 10:00 ",
-              "title": "Иностранный язык",
-              "teacher": "ст.пр.Рачинская Н.В.",
-              "type": "ст.пр.Рачинская Н.В.",
-              "classroom": "ауд.302"
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
             },
             {
-              "time": "8:30 — 10:00 ",
-              "title": "Элективные дисциплины ( модули) по физической культуре и спорту",
-              "teacher": "NN-препод.",
-              "type": "Практика",
-              "classroom": "ауд.сз"
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
             }
           ]
         },
         {
-          "day": "Среда",
-          "lessons": [
-            {
-              "time": "8:30 — 10:00 ",
-              "title": "Иностранный язык",
-              "teacher": "ст.пр.Ступникова Н.А.",
-              "type": "Практика",
-              "classroom": "ауд.311"
-            },
+          "date": "10.10.2019",
+          "dateTimetable": [
             {
               "time": "10:10 — 11:40",
-              "title": "Проектирование баз данных",
-              "teacher": "проф.Щербаков С.М.",
-              "type": "Лекция",
-              "classroom": "ауд.302"
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Информатика",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.303"
+                }
+              ]
             },
             {
-              "time": "8:30 — 10:00 ",
-              "title": "Иностранный язык",
-              "teacher": "ст.пр.Рачинская Н.В.",
-              "type": "ст.пр.Рачинская Н.В.",
-              "classroom": "ауд.302"
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Архитектура компьютеров",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.309"
+                }
+              ]
             },
             {
-              "time": "8:30 — 10:00 ",
-              "title": "Элективные дисциплины ( модули) по физической культуре и спорту",
-              "teacher": "NN-препод.",
-              "type": "Практика",
-              "classroom": "ауд.сз"
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Всеобщая история",
+                  "teacher": "доц.Мерзлякова И.Л.",
+                  "teacherFullName": "доц.Мерзлякова И.Л.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
             }
           ]
+        },
+        {
+          "date": "11.10.2019",
+          "dateTimetable": [
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.303"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.551"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Математический анализ",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.309"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "12.10.2019",
+          "dateTimetable": []
         }
       ]
-
     },
     {
-      "group": "341-ИСТ",
+      "group": "321-ИСТ",
+      "week": "odd",
       "groupTimetable": [
         {
-          "day": "Понедельник",
-          "lessons": "Пары на Понедельник"
+          "date": "30.9.2019",
+          "dateTimetable": [
+            {
+              "time": "8:30 — 10:00",
+              "lessonNumber": 1,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.303"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.551"
+                }
+              ]
+            },
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Безопасность жизнедеятельности",
+                  "teacher": "ст.пр.Туриченко Л.П.",
+                  "teacherFullName": "ст.пр.Туриченко Л.П.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Математический анализ",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "teacherFullName": "проф.Сахарова Л.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.314"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.451"
+                }
+              ]
+            }
+          ]
         },
         {
-          "day": "Вторник",
-          "lessons": "Пары на Вторник"
+          "date": "1.10.2019",
+          "dateTimetable": [
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2.10.2019",
+          "dateTimetable": [
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Практика",
+                  "classroom": "ауд.653"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "3.10.2019",
+          "dateTimetable": []
+        },
+        {
+          "date": "4.10.2019",
+          "dateTimetable": [
+            {
+              "time": "8:30 — 10:00",
+              "lessonNumber": 1,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.303"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.551"
+                }
+              ]
+            },
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Математический анализ",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.309"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "NN-препод.",
+                  "teacherFullName": "NN-препод.",
+                  "type": "Практика",
+                  "classroom": "ауд.сз"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "5.10.2019",
+          "dateTimetable": []
         }
       ]
-
+    },
+    {
+      "group": "311-ПМИ",
+      "week": "even",
+      "groupTimetable": [
+        {
+          "date": "7.10.2019",
+          "dateTimetable": [
+            {
+              "time": "8:30 — 10:00",
+              "lessonNumber": 1,
+              "lessons": [
+                {
+                  "title": "Дискретная математика",
+                  "teacher": "доц.Алексейчик Т.В.",
+                  "teacherFullName": "доц.Алексейчик Т.В.",
+                  "type": "Лекция",
+                  "classroom": "ауд.313"
+                }
+              ]
+            },
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Безопасность жизнедеятельности",
+                  "teacher": "ст.пр.Туриченко Л.П.",
+                  "teacherFullName": "ст.пр.Туриченко Л.П.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Математический анализ",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "teacherFullName": "проф.Сахарова Л.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.314"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.451"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "8.10.2019",
+          "dateTimetable": [
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "9.10.2019",
+          "dateTimetable": [
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Практика",
+                  "classroom": "ауд.653"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "10.10.2019",
+          "dateTimetable": [
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Информатика",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Архитектура компьютеров",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.309"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Всеобщая история",
+                  "teacher": "доц.Мерзлякова И.Л.",
+                  "teacherFullName": "доц.Мерзлякова И.Л.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "11.10.2019",
+          "dateTimetable": [
+            {
+              "time": "8:30 — 10:00",
+              "lessonNumber": 1,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.303"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.551"
+                }
+              ]
+            },
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Математический анализ",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.309"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "NN-препод.",
+                  "teacherFullName": "NN-препод.",
+                  "type": "Практика",
+                  "classroom": "ауд.сз"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "12.10.2019",
+          "dateTimetable": []
+        }
+      ]
+    },
+    {
+      "group": "311-ПМИ",
+      "week": "odd",
+      "groupTimetable": [
+        {
+          "date": "30.9.2019",
+          "dateTimetable": [
+            {
+              "time": "8:30 — 10:00",
+              "lessonNumber": 1,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.303"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.551"
+                }
+              ]
+            },
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Безопасность жизнедеятельности",
+                  "teacher": "ст.пр.Туриченко Л.П.",
+                  "teacherFullName": "ст.пр.Туриченко Л.П.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Математический анализ",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "teacherFullName": "проф.Сахарова Л.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.314"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.451"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "1.10.2019",
+          "dateTimetable": [
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "2.10.2019",
+          "dateTimetable": [
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Практика",
+                  "classroom": "ауд.653"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Алгебра и геометрия",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Практика",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Иностранный язык ( английский)",
+                  "teacher": "ст.пр.Рачинская Н.В.",
+                  "teacherFullName": "ст.пр.Рачинская Н.В.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "3.10.2019",
+          "dateTimetable": [
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Информатика",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.303"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Архитектура компьютеров",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.309"
+                }
+              ]
+            },
+            {
+              "time": "13:50 — 15:20",
+              "lessonNumber": 4,
+              "lessons": [
+                {
+                  "title": "Всеобщая история",
+                  "teacher": "доц.Мерзлякова И.Л.",
+                  "teacherFullName": "доц.Мерзлякова И.Л.",
+                  "type": "Практика",
+                  "classroom": "ауд.551"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "4.10.2019",
+          "dateTimetable": [
+            {
+              "time": "8:30 — 10:00",
+              "lessonNumber": 1,
+              "lessons": [
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Гречкина В.Ю.",
+                  "teacherFullName": "ст.пр.Гречкина В.Ю.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.303"
+                },
+                {
+                  "title": "Иностранный язык",
+                  "teacher": "ст.пр.Ионова Е.С.",
+                  "teacherFullName": "ст.пр.Ионова Е.С.",
+                  "type": "Лабораторная",
+                  "classroom": "ауд.551"
+                }
+              ]
+            },
+            {
+              "time": "10:10 — 11:40",
+              "lessonNumber": 2,
+              "lessons": [
+                {
+                  "title": "Математический анализ",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "teacherFullName": "доц.Чувенков А.Ф.",
+                  "type": "Лекция",
+                  "classroom": "ауд.309"
+                }
+              ]
+            },
+            {
+              "time": "11:50 — 13:20",
+              "lessonNumber": 3,
+              "lessons": [
+                {
+                  "title": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "NN-препод.",
+                  "teacherFullName": "NN-препод.",
+                  "type": "Практика",
+                  "classroom": "ауд.сз"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "date": "5.10.2019",
+          "dateTimetable": []
+        }
+      ]
     }
   ],
-
-  "files": [
+  "groups": [
     {
-      "type": "dir",
-      "extension": "",
-      "filename": "nisi-et-Lorem",
-      "basename": "nisi-et-Lorem",
-      "path": "mirzaliev/nisi-et-Lorem"
-    },
-    {
-      "type": "dir",
-      "extension": "",
-      "filename": "qui-commodo-aliquip",
-      "basename": "qui-commodo-aliquip",
-      "path": "mirzaliev/qui-commodo-aliquip"
-    },
-    {
-      "type": "dir",
-      "extension": "",
-      "filename": "est-minim-sunt",
-      "basename": "est-minim-sunt",
-      "path": "mirzaliev/est-minim-sunt"
-    },
-    {
-      "type": "dir",
-      "extension": "",
-      "filename": "dolor-excepteur-anim",
-      "basename": "dolor-excepteur-anim",
-      "path": "mirzaliev/dolor-excepteur-anim"
-    },
-    {
-      "type": "dir",
-      "extension": "",
-      "filename": "aliquip-occaecat-in",
-      "basename": "aliquip-occaecat-in",
-      "path": "mirzaliev/aliquip-occaecat-in"
-    },
-    {
-      "type": "dir",
-      "extension": "",
-      "filename": "ut-consectetur-non",
-      "basename": "ut-consectetur-non",
-      "path": "mirzaliev/ut-consectetur-non"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "tempor-elit-nisi",
-      "basename": "tempor-elit-nisi.pdf",
-      "path": "mirzaliev/tempor-elit-nisi.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "xls",
-      "filename": "sint-velit-excepteur",
-      "basename": "sint-velit-excepteur.xls",
-      "path": "mirzaliev/sint-velit-excepteur.xls"
-    },
-    {
-      "type": "dir",
-      "extension": "",
-      "filename": "dolor-aute-velit",
-      "basename": "dolor-aute-velit",
-      "path": "mirzaliev/dolor-aute-velit"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "minim-elit-ullamco",
-      "basename": "minim-elit-ullamco.pdf",
-      "path": "mirzaliev/minim-elit-ullamco.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "et-aute-fugiat",
-      "basename": "et-aute-fugiat.jpg",
-      "path": "mirzaliev/et-aute-fugiat.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "dolore-excepteur-ut",
-      "basename": "dolore-excepteur-ut.png",
-      "path": "mirzaliev/dolore-excepteur-ut.png"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "ut-veniam-Lorem",
-      "basename": "ut-veniam-Lorem.jpg",
-      "path": "mirzaliev/ut-veniam-Lorem.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "id-et-dolor",
-      "basename": "id-et-dolor.png",
-      "path": "mirzaliev/id-et-dolor.png"
-    },
-    {
-      "type": "file",
-      "extension": "xls",
-      "filename": "velit-ad-ullamco",
-      "basename": "velit-ad-ullamco.xls",
-      "path": "mirzaliev/velit-ad-ullamco.xls"
-    },
-    {
-      "type": "dir",
-      "extension": "",
-      "filename": "cillum-consectetur-elit",
-      "basename": "cillum-consectetur-elit",
-      "path": "mirzaliev/cillum-consectetur-elit"
-    },
-    {
-      "type": "dir",
-      "extension": "",
-      "filename": "adipisicing-sit-duis",
-      "basename": "adipisicing-sit-duis",
-      "path": "mirzaliev/adipisicing-sit-duis"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "elit-ut-ex",
-      "basename": "elit-ut-ex.jpg",
-      "path": "mirzaliev/elit-ut-ex.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "consectetur-eu-fugiat",
-      "basename": "consectetur-eu-fugiat.pdf",
-      "path": "mirzaliev/consectetur-eu-fugiat.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "nisi-pariatur-tempor",
-      "basename": "nisi-pariatur-tempor.png",
-      "path": "mirzaliev/nisi-pariatur-tempor.png"
-    },
-    {
-      "type": "file",
-      "extension": "txt",
-      "filename": "duis-ad-consequat",
-      "basename": "duis-ad-consequat.txt",
-      "path": "mirzaliev/duis-ad-consequat.txt"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "esse-laboris-eu",
-      "basename": "esse-laboris-eu.jpg",
-      "path": "mirzaliev/esse-laboris-eu.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "cupidatat-amet-adipisicing",
-      "basename": "cupidatat-amet-adipisicing.pdf",
-      "path": "mirzaliev/cupidatat-amet-adipisicing.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "enim-excepteur-velit",
-      "basename": "enim-excepteur-velit.jpg",
-      "path": "mirzaliev/enim-excepteur-velit.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "cupidatat-amet-adipisicing",
-      "basename": "cupidatat-amet-adipisicing.pdf",
-      "path": "mirzaliev/cupidatat-amet-adipisicing.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "enim-excepteur-velit",
-      "basename": "enim-excepteur-velit.jpg",
-      "path": "mirzaliev/enim-excepteur-velit.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "id-duis-aliqua",
-      "basename": "id-duis-aliqua.jpg",
-      "path": "mirzaliev/id-duis-aliqua.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "nisi-pariatur-tempor",
-      "basename": "nisi-pariatur-tempor.png",
-      "path": "mirzaliev/nisi-pariatur-tempor.png"
-    },
-    {
-      "type": "file",
-      "extension": "txt",
-      "filename": "consectetur-irure-irure",
-      "basename": "consectetur-irure-irure.txt",
-      "path": "mirzaliev/consectetur-irure-irure.txt"
-    },
-    {
-      "type": "file",
-      "extension": "txt",
-      "filename": "veniam-anim-nostrud",
-      "basename": "veniam-anim-nostrud.txt",
-      "path": "mirzaliev/veniam-anim-nostrud.txt"
-    },
-    {
-      "type": "file",
-      "extension": "xls",
-      "filename": "ea-aliqua-fugiat",
-      "basename": "ea-aliqua-fugiat.xls",
-      "path": "mirzaliev/ea-aliqua-fugiat.xls"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "irure-ullamco-Lorem",
-      "basename": "irure-ullamco-Lorem.jpg",
-      "path": "mirzaliev/irure-ullamco-Lorem.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "do-dolore-culpa",
-      "basename": "do-dolore-culpa.pdf",
-      "path": "mirzaliev/do-dolore-culpa.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "sint-duis-pariatur",
-      "basename": "sint-duis-pariatur.jpg",
-      "path": "mirzaliev/sint-duis-pariatur.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "docx",
-      "filename": "voluptate-minim-in-amet",
-      "basename": "voluptate-minim-in-amet.docx",
-      "path": "mirzaliev/voluptate-minim-in-amet.docx"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "dolor-adipisicing-veniam",
-      "basename": "dolor-adipisicing-veniam.pdf",
-      "path": "mirzaliev/dolor-adipisicing-veniam.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "docx",
-      "filename": "nulla-ut-aliquip-laborum",
-      "basename": "nulla-ut-aliquip-laborum.docx",
-      "path": "mirzaliev/nulla-ut-aliquip-laborum.docx"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "veniam-minim-laborum",
-      "basename": "veniam-minim-laborum.jpg",
-      "path": "mirzaliev/veniam-minim-laborum.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "Lorem-magna-enim",
-      "basename": "Lorem-magna-enim.pdf",
-      "path": "mirzaliev/Lorem-magna-enim.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "aliqua-quis-qui",
-      "basename": "aliqua-quis-qui.png",
-      "path": "mirzaliev/aliqua-quis-qui.png"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "ea-nulla-esse",
-      "basename": "ea-nulla-esse.png",
-      "path": "mirzaliev/ea-nulla-esse.png"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "adipisicing-veniam-sit",
-      "basename": "adipisicing-veniam-sit.png",
-      "path": "mirzaliev/adipisicing-veniam-sit.png"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "duis-sit-dolor",
-      "basename": "duis-sit-dolor.pdf",
-      "path": "mirzaliev/duis-sit-dolor.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "fugiat-ea-anim",
-      "basename": "fugiat-ea-anim.jpg",
-      "path": "mirzaliev/fugiat-ea-anim.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "nulla-in-fugiat",
-      "basename": "nulla-in-fugiat.pdf",
-      "path": "mirzaliev/nulla-in-fugiat.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "docx",
-      "filename": "do-ad-consectetur-culpa",
-      "basename": "do-ad-consectetur-culpa.docx",
-      "path": "mirzaliev/do-ad-consectetur-culpa.docx"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "sint-aliqua-eu",
-      "basename": "sint-aliqua-eu.png",
-      "path": "mirzaliev/sint-aliqua-eu.png"
-    },
-    {
-      "type": "file",
-      "extension": "docx",
-      "filename": "officia-sint-dolor-magna",
-      "basename": "officia-sint-dolor-magna.docx",
-      "path": "mirzaliev/officia-sint-dolor-magna.docx"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "ad-qui-commodo",
-      "basename": "ad-qui-commodo.pdf",
-      "path": "mirzaliev/ad-qui-commodo.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "do-minim-ad",
-      "basename": "do-minim-ad.jpg",
-      "path": "mirzaliev/do-minim-ad.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "txt",
-      "filename": "nulla-culpa-proident",
-      "basename": "nulla-culpa-proident.txt",
-      "path": "mirzaliev/nulla-culpa-proident.txt"
-    },
-    {
-      "type": "file",
-      "extension": "docx",
-      "filename": "esse-cupidatat-esse-non",
-      "basename": "esse-cupidatat-esse-non.docx",
-      "path": "mirzaliev/esse-cupidatat-esse-non.docx"
-    },
-    {
-      "type": "file",
-      "extension": "pdf",
-      "filename": "id-nulla-consequat",
-      "basename": "id-nulla-consequat.pdf",
-      "path": "mirzaliev/id-nulla-consequat.pdf"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "excepteur-sit-occaecat",
-      "basename": "excepteur-sit-occaecat.png",
-      "path": "mirzaliev/excepteur-sit-occaecat.png"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "magna-qui-deserunt",
-      "basename": "magna-qui-deserunt.png",
-      "path": "mirzaliev/magna-qui-deserunt.png"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "qui-irure-cillum",
-      "basename": "qui-irure-cillum.png",
-      "path": "mirzaliev/qui-irure-cillum.png"
-    },
-    {
-      "type": "file",
-      "extension": "jpg",
-      "filename": "non-aliquip-do",
-      "basename": "non-aliquip-do.jpg",
-      "path": "mirzaliev/non-aliquip-do.jpg"
-    },
-    {
-      "type": "file",
-      "extension": "png",
-      "filename": "quis-aliquip-exercitation",
-      "basename": "quis-aliquip-exercitation.png",
-      "path": "mirzaliev/quis-aliquip-exercitation.png"
+      "faculty": "КТиИБ",
+      "groups": [
+        {
+          "course": 1,
+          "groups": [
+            {
+              "name": "311-ИБ"
+            },
+            {
+              "name": "311-ИСТ"
+            },
+            {
+              "name": "311-ПМИ"
+            },
+            {
+              "name": "311-ПИИ"
+            },
+            {
+              "name": "311-ПРИ"
+            },
+            {
+              "name": "311-ИБ"
+            }
+          ]
+        },
+        {
+          "course": 2,
+          "groups": [
+            {
+              "name": "ПИ-821"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

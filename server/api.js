@@ -19,29 +19,21 @@ server.use(function(req, res, next) {
   next()
 })
 
-server.get('/timetable', (req, res) => {
-  const timetable = db
-    .get('timetable')
-    .find({ group: '321-ИСТ' })
-    .value()
-  res.jsonp(timetable)
-  // console.log('files')
-  // if (req.query.path) {
-  //   const files = db.get(req.query.path).value()
-  //   if (files) {
-  //     res.jsonp(files)
-  //   } else {
-  //     res.sendStatus(404)
-  //   }
-  // } else {
-  //   const files = db.get('files').value()
-  //   res.jsonp(files)
-  // }
+server.get('/search', (req, res) => {
+  if (!req.query.group) res.status(500).send('Отсутсвуют параметры для поиска')
+  const timetable = db.get('timetable').filter({ group: req.query.group })
+  if (req.query.week) {
+    return res.jsonp(timetable.find({ week: req.query.week }))
+  }
+  return res.jsonp(timetable.find({ week: 'even' }))
+})
+
+server.get('faculties', (req, res) => {
+  res.jsonp(db.get('faculties'))
 })
 
 server.use(middlewares)
 server.use(router)
-
 server.listen(4000, () => {
   console.log('JSON Server is running')
 })
