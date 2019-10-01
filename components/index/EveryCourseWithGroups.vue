@@ -4,7 +4,7 @@
       <span class="course__number">{{ course.course }}</span>
       <span>КУРС</span>
     </div>
-    <div class="course-groups">
+    <div class="course-groups tab-content_flexGrid">
       <a
         v-for="(group, index) in course.groups"
         :key="index"
@@ -46,7 +46,4 @@ export default {
       font-size: 1.8em
       text-align: center
     &-groups
-      display: flex
-      flex-flow: row wrap
-      justify-content: flex-start
 </style>

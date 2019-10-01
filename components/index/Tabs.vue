@@ -92,4 +92,8 @@ export default {
       border-color: $accent
       background-color: $accent
       color: white
+  .tab-content_flexGrid
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-start
 </style>

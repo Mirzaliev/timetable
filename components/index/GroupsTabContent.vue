@@ -1,7 +1,7 @@
 <template>
   <div class="groups-tab-wrapper">
     <div class="faculties-wrapper">
-      <div class="faculties-list">
+      <div class="faculties-list tab-content_flexGrid">
         <a href="#" class="tab-content__btn tab-content__btn_active">МиП</a>
         <a href="#" class="tab-content__btn">КТиИБ</a>
         <a href="#" class="tab-content__btn">КТиИ</a>
@@ -140,9 +140,6 @@ export default {
     &-wrapper
       margin-bottom: 2rem
     &-list
-      display: flex
-      flex-flow: row wrap
-      justify-content: flex-start
       a
         flex: 0 1 14.2857%
   .selected-faculty
