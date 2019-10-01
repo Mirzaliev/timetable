@@ -36,7 +36,8 @@ module.exports = {
    */
   plugins: [
     '~plugins/vue-js-modal',
-    { src: '~/plugins/popover.js', mode: 'client' }
+    { src: '~/plugins/popover.js', mode: 'client' },
+    { src: '~/plugins/window.js', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -45,9 +46,6 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module'
   ],
-  router: {
-    middleware: ['windowHeight']
-  },
   /*
    ** Nuxt.js modules
    */

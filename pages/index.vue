@@ -1,9 +1,14 @@
 <template>
   <section class="index-section searchPage">
     <div class="searchPage-container">
-      <div class="searchPage-search-wrap">
+      <div
+        class="searchPage-search-wrap"
+        :style="{ height: $store.getters.getWindowHeight }"
+      >
         <form action="GET" class="searchPage-form">
-          <div class="searchPage__title">ПОИСК</div>
+          <div class="searchPage__title">
+            ПОИСК
+          </div>
           <v-select
             label="name"
             :filterable="false"
@@ -52,12 +57,14 @@
 
 <script>
 import vSelect from 'vue-select'
+import { mapState } from 'vuex'
 
 export default {
   components: {
     vSelect,
     tabs: () => import('~/components/index/Tabs.vue')
   },
+  computed: mapState(['height']),
   data() {
     return {
       visible: false,
@@ -65,36 +72,33 @@ export default {
       json: {}
     }
   },
-  asyncData({ userAgent }) {
-    console.log(userAgent)
-  },
   mounted() {
-    const _ww = window.innerWidth
-    window.addEventListener('resize', () => {
-      this.calculateHeight(_ww)
-    })
-    window.addEventListener(
-      'orientationchange',
-      () => {
-        this.calculateHeight()
-      },
-      false
-    )
+    // const _ww = window.innerWidth
+    // window.addEventListener('resize', () => {
+    //   this.calculateHeight(_ww)
+    // })
+    // window.addEventListener(
+    //   'orientationchange',
+    //   () => {
+    //     this.calculateHeight()
+    //   },
+    //   false
+    // )
   },
   updated() {
-    this.calculateHeight()
+    // this.calculateHeight()
   },
   destroyed() {
-    window.removeEventListener('resize', () => {
-      this.calculateHeight()
-    })
-    window.removeEventListener(
-      'orientationchange',
-      () => {
-        this.calculateHeight()
-      },
-      false
-    )
+    // window.removeEventListener('resize', () => {
+    //   this.calculateHeight()
+    // })
+    // window.removeEventListener(
+    //   'orientationchange',
+    //   () => {
+    //     this.calculateHeight()
+    //   },
+    //   false
+    // )
   },
   methods: {
     calculateHeight(_ww = null) {
