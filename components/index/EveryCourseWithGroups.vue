@@ -46,4 +46,7 @@ export default {
       font-size: 1.8em
       text-align: center
     &-groups
+      display: flex
+      flex-flow: row wrap
+      justify-content: flex-start
 </style>
