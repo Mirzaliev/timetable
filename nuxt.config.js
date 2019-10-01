@@ -3,10 +3,10 @@ module.exports = {
   /*
    ** Headers of the page
    */
-  // server: {
-  //   host: '127.0.0.1',
-  //   port: 8080
-  // },
+  server: {
+    host: '192.168.0.106',
+    port: 3000
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -45,6 +45,9 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module'
   ],
+  router: {
+    middleware: ['windowHeight']
+  },
   /*
    ** Nuxt.js modules
    */

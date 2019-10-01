@@ -11,12 +11,12 @@
             @input="changeRoute"
             @search="onSearch"
           >
-            <template slot="no-options">
-              По запросу ничего не найдено...
-            </template>
-            <template slot="option" slot-scope="option">
-              {{ option.full_name }}
-            </template>
+            <template slot="no-options"
+              >По запросу ничего не найдено...</template
+            >
+            <template slot="option" slot-scope="option">{{
+              option.full_name
+            }}</template>
             <template slot="open-indicator">
               <svg
                 version="1.1"
@@ -65,7 +65,58 @@ export default {
       json: {}
     }
   },
+  asyncData({ userAgent }) {
+    console.log(userAgent)
+  },
+  mounted() {
+    const _ww = window.innerWidth
+    window.addEventListener('resize', () => {
+      this.calculateHeight(_ww)
+    })
+    window.addEventListener(
+      'orientationchange',
+      () => {
+        this.calculateHeight()
+      },
+      false
+    )
+  },
+  updated() {
+    this.calculateHeight()
+  },
+  destroyed() {
+    window.removeEventListener('resize', () => {
+      this.calculateHeight()
+    })
+    window.removeEventListener(
+      'orientationchange',
+      () => {
+        this.calculateHeight()
+      },
+      false
+    )
+  },
   methods: {
+    calculateHeight(_ww = null) {
+      const wh = window.innerHeight
+      const hh = document.getElementsByClassName('header')[0].offsetHeight
+      if (_ww) {
+        if (window.innerWidth !== _ww) {
+          console.log({
+            _ww,
+            newWW: window.innerWidth,
+            if: window.innerWidth !== _ww
+          })
+          document.getElementsByClassName(
+            'searchPage-search-wrap'
+          )[0].style.height = `${wh - hh}px`
+        }
+        return 0
+      }
+      document.getElementsByClassName(
+        'searchPage-search-wrap'
+      )[0].style.height = `${wh - hh}px`
+    },
     changeRoute(person) {
       this.json = person
     },

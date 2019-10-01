@@ -19,28 +19,6 @@ export default {
     'nav-links': () => import('~/components/Menu/NavLinks.vue'),
     'auth-user': () => import('~/components/Menu/AuthUser.vue'),
     'mobile-menu': () => import('~/components/Menu/MobileMenu.vue')
-  },
-  mounted() {
-    this.calculateHeight()
-    // window.addEventListener('resize', () => {
-    //   this.calculateHeight()
-    // })
-    window.addEventListener(
-      'orientationchange',
-      () => {
-        this.calculateHeight()
-      },
-      false
-    )
-  },
-  methods: {
-    calculateHeight() {
-      const wh = window.innerHeight
-      const hh = document.getElementsByClassName('header')[0].offsetHeight
-      document.getElementsByClassName(
-        'searchPage-search-wrap'
-      )[0].style.height = `${wh - hh}px`
-    }
   }
 }
 </script>
