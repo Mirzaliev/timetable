@@ -4,8 +4,8 @@ module.exports = {
    ** Headers of the page
    */
   server: {
-    host: '192.168.0.106',
-    port: 3000
+    // host: '192.168.0.106',
+    // port: 3000
   },
   head: {
     title: process.env.npm_package_name || '',
@@ -26,7 +26,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#FF0000' },
   /*
    ** Global CSS
    */
@@ -36,8 +36,7 @@ module.exports = {
    */
   plugins: [
     '~plugins/vue-js-modal',
-    { src: '~/plugins/popover.js', mode: 'client' },
-    { src: '~/plugins/window.js', ssr: false }
+    { src: '~/plugins/popover.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules

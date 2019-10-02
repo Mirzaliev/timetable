@@ -1,6 +1,6 @@
 <template>
   <div class="main-container">
-    <header class="header">
+    <header ref="layoutHeader" class="header">
       <div class="header-logo">
         <a href="#" class="header__logo">Расписание РГЭУ (РИНХ)</a>
       </div>
@@ -19,7 +19,29 @@ export default {
     'nav-links': () => import('~/components/Menu/NavLinks.vue'),
     'auth-user': () => import('~/components/Menu/AuthUser.vue'),
     'mobile-menu': () => import('~/components/Menu/MobileMenu.vue')
-  }
+  },
+  updated() {
+    const _ww = window.innerWidth
+    const hh = this.$refs.layoutHeader.offsetHeight
+    this.$store.dispatch('calculateSearchPageWrapHeight', { hh })
+    this.$nextTick(() => {
+      window.addEventListener('resize', () => {
+        this.$store.dispatch('calculateSearchPageWrapHeight', { hh, _ww })
+      })
+      window.addEventListener('orientationchange', () => {
+        this.$store.dispatch('calculateSearchPageWrapHeight', { hh })
+      })
+    })
+  },
+  destroyed() {
+    window.removeEventListener('resize', () => {
+      this.$store.dispatch('calculateSearchPageWrapHeight')
+    })
+    window.removeEventListener('orientationchange', () => {
+      this.$store.dispatch('calculateSearchPageWrapHeight')
+    })
+  },
+  methods: {}
 }
 </script>
 <style lang="sass">

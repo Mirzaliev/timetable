@@ -1,19 +1,27 @@
 export const state = () => ({
-  height: 0
+  searchPageWrapHeight: 0
 })
-export const actions = {
-  WINDOW_SIZE_CHANGED({ commit }, _height) {
-    console.log(_height)
-    commit('SET_WINDOW_SIZE_CHANGED', _height)
-  }
-}
+
 export const mutations = {
-  SET_WINDOW_SIZE_CHANGED(state, _height) {
-    state.height = _height
+  setSearchPageWrapHeight(state, height) {
+    state.searchPageWrapHeight = height
   }
 }
-export const getters = {
-  getWindowHeight(state) {
-    return state.height + 'px'
+
+export const actions = {
+  calculateSearchPageWrapHeight({ commit }, size) {
+    if (!size) {
+      return
+    }
+    const wh = window.innerHeight
+    if (size._ww && window.innerWidth !== size._ww) {
+      commit('setSearchPageWrapHeight', `${wh - size.hh}px`)
+      return
+    }
+    commit('setSearchPageWrapHeight', `${wh - size.hh}px`)
   }
+}
+
+export const getters = {
+  getSearchPageWrapHeight: (s) => s.searchPageWrapHeight
 }

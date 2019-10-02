@@ -141,7 +141,7 @@ export default {
       margin-bottom: 2rem
     &-list
       a
-        flex: 0 1 14.2857%
+        flex: 0 0 14.2857%
   .selected-faculty
     font-family: $bold
     color: $text

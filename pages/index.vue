@@ -2,8 +2,9 @@
   <section class="index-section searchPage">
     <div class="searchPage-container">
       <div
+        ref="searchPage-search-wrap"
         class="searchPage-search-wrap"
-        :style="{ height: $store.getters.getWindowHeight }"
+        :style="{ height: searchPageWrapHeight }"
       >
         <form action="GET" class="searchPage-form">
           <div class="searchPage__title">
@@ -57,70 +58,30 @@
 
 <script>
 import vSelect from 'vue-select'
-import { mapState } from 'vuex'
-
 export default {
   components: {
     vSelect,
     tabs: () => import('~/components/index/Tabs.vue')
   },
-  computed: mapState(['height']),
   data() {
     return {
       visible: false,
       options: [],
-      json: {}
+      json: {},
+      searchPageWrapHeight: this.$store.state.searchPageWrapHeight
     }
   },
   mounted() {
-    // const _ww = window.innerWidth
-    // window.addEventListener('resize', () => {
-    //   this.calculateHeight(_ww)
-    // })
-    // window.addEventListener(
-    //   'orientationchange',
-    //   () => {
-    //     this.calculateHeight()
-    //   },
-    //   false
-    // )
-  },
-  updated() {
-    // this.calculateHeight()
-  },
-  destroyed() {
-    // window.removeEventListener('resize', () => {
-    //   this.calculateHeight()
-    // })
-    // window.removeEventListener(
-    //   'orientationchange',
-    //   () => {
-    //     this.calculateHeight()
-    //   },
-    //   false
-    // )
+    this.$nextTick(() => {
+      this.$store.watch(
+        (height) => this.$store.state.searchPageWrapHeight,
+        (newHeight) => {
+          this.searchPageWrapHeight = newHeight
+        }
+      )
+    })
   },
   methods: {
-    calculateHeight(_ww = null) {
-      const wh = window.innerHeight
-      const hh = document.getElementsByClassName('header')[0].offsetHeight
-      if (_ww) {
-        if (window.innerWidth !== _ww) {
-          console.log({
-            _ww,
-            newWW: window.innerWidth,
-            if: window.innerWidth !== _ww
-          })
-          document.getElementsByClassName(
-            'searchPage-search-wrap'
-          )[0].style.height = `${wh - hh}px`
-        }
-        return 0
-      }
-      document.getElementsByClassName(
-        'searchPage-search-wrap'
-      )[0].style.height = `${wh - hh}px`
-    },
     changeRoute(person) {
       this.json = person
     },
