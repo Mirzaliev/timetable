@@ -28,6 +28,25 @@ server.get('/search', (req, res) => {
   return res.jsonp(timetable.find({ week: 'even' }))
 })
 
+server.get('/groups', (req, res) => {
+  if (!req.query.name) res.status(500).send('Отсутсвуют параметры для поиска')
+  const groups = db.get('groups').find({ name: req.query.name })
+  return res.jsonp(groups.get('groups'))
+})
+
+server.get('/teachers', (req, res) => {
+  if (!req.query.sort) res.status(500).send('Отсутсвуют параметры для поиска')
+  const teachers = db.get('teachers').find({ name: req.query.sort })
+  return res.jsonp(teachers)
+})
+
+server.get('/classroom', (req, res) => {
+  console.log(req.query.sort)
+  if (!req.query.sort) res.status(500).send('Отсутсвуют параметры для поиска')
+  const classroom = db.get('classroom').find({ name: Number(req.query.sort) })
+  return res.jsonp(classroom)
+})
+
 server.get('faculties', (req, res) => {
   res.jsonp(db.get('faculties'))
 })

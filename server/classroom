@@ -1,0 +1,35 @@
+[
+  {
+    name: '1',
+    classroom: [
+      '{{repeat(20, 20)}}',
+      {
+        classroom: function (tags) {
+          return '1' + tags.integer(1, 9) + tags.integer(1,9);
+        }
+      }
+    ]
+  },
+  {
+    name: '2',
+    classroom: [
+      '{{repeat(20, 20)}}',
+      {
+        classroom: function (tags) {
+          return '3' + tags.integer(1, 9) + tags.integer(1,9);
+        }
+      }
+    ]
+  },
+  {
+    name: '3',
+    classroom: [
+      '{{repeat(20, 20)}}',
+      {
+        classroom: function (tags) {
+          return '3' + tags.integer(1, 9) + tags.integer(1,9);
+        }
+      }
+    ]
+  }
+]
