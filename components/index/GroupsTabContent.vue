@@ -32,7 +32,7 @@ export default {
   name: 'GroupsTabsContent',
   components: {
     course: () =>
-      import('~/components/index/UiElements/EveryCourseWithGroups.vue'),
+      import('~/components/index/UIElements/EveryCourseWithGroups.vue'),
     spinner: () => import('vue-spinner/src/DotLoader.vue')
   },
   data() {

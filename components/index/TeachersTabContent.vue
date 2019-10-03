@@ -23,7 +23,7 @@ export default {
   name: 'TeachersTabContent',
   components: {
     tabContentSlider: () =>
-      import('~/components/index/UiElements/TabContentSlider.vue')
+      import('~/components/index/UIElements/TabContentSlider.vue')
   },
   data() {
     return {
