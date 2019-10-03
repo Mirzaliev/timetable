@@ -6,11 +6,11 @@
       </v-tab>
 
       <v-tab id="teachers" title="Преподаватели">
-        Преподаватели
+        <teachersTabsContent></teachersTabsContent>
       </v-tab>
 
       <v-tab id="classroom" title="Аудитории">
-        Аудитории
+        <class-room-tabs-content></class-room-tabs-content>
       </v-tab>
     </vue-tabs>
   </client-only>
@@ -23,7 +23,11 @@ export default {
   components: {
     VueTabs,
     VTab,
-    groupsTabsContent: () => import('~/components/index/GroupsTabContent.vue')
+    groupsTabsContent: () => import('~/components/index/GroupsTabContent.vue'),
+    teachersTabsContent: () =>
+      import('~/components/index/TeachersTabContent.vue'),
+    classRoomTabsContent: () =>
+      import('~/components/index/ClassRoomTabContent.vue')
   },
   data() {
     return {
@@ -77,6 +81,14 @@ export default {
           border-width: 0 0 1px 0
           border-bottom: solid $accent
   .tab-content
+    &-wrapper
+      padding: 2rem 0 3rem 0
+    &__hint
+      font-family: $bold
+      color: $text
+      word-wrap: break-word
+      font-size: .99em
+      margin: 1rem 0 2rem 0
     &__btn
       display: inline-block
       padding: .555rem
@@ -90,6 +102,9 @@ export default {
       border: 1px solid $accent
       margin-bottom: 1.5%
       margin-right: 1.5%
+      &:hover
+        background-color: $accent
+        color: white
     &__btn_active
       border-color: $accent
       background-color: $accent

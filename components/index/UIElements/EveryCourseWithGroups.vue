@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="sass">
-@import "../../assets/sass/vars"
+@import "../../../assets/sass/vars"
 .groups-tab-wrapper
   .course
     display: flex

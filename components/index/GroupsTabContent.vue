@@ -1,5 +1,5 @@
 <template>
-  <div class="groups-tab-wrapper">
+  <div class="groups-tab-wrapper tab-content-wrapper">
     <div class="faculties-wrapper">
       <div class="faculties-list tab-content_flexGrid">
         <a href="#" class="tab-content__btn tab-content__btn_active">МиП</a>
@@ -10,9 +10,9 @@
         <a href="#" class="tab-content__btn">КТиИ</a>
         <a href="#" class="tab-content__btn">ЮрФак</a>
       </div>
-      <div class="selected-faculty">
-        Факультет Компьютерных технологий и информационной безопасности
-      </div>
+    </div>
+    <div class="tab-content__hint">
+      Факультет Компьютерных технологий и информационной безопасности
     </div>
     <div class="groups-wrapper">
       <course
@@ -28,7 +28,8 @@
 export default {
   name: 'GroupsTabsContent',
   components: {
-    course: () => import('~/components/index/EveryCourseWithGroups.vue')
+    course: () =>
+      import('~/components/index/UiElements/EveryCourseWithGroups.vue')
   },
   data() {
     return {
@@ -195,19 +196,10 @@ export default {
 <style lang="sass">
 @import "../../assets/sass/vars"
 .groups-tab-wrapper
-  padding: 2rem 0 3rem 0
   .faculties
-    &-wrapper
-      margin-bottom: 2rem
     &-list
       .tab-content__btn
         flex: 0 0 13%
         &:last-child
           margin-right: 0
-  .selected-faculty
-    font-family: $bold
-    color: $text
-    word-wrap: break-word
-    font-size: .99em
-    padding: .5rem 0
 </style>
