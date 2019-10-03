@@ -12,7 +12,7 @@ export default {
   name: 'ClassRoomTabContent',
   components: {
     tabContentSlider: () =>
-      import('~/components/index//UiElements/TabContentSlider.vue')
+      import('~/components/index/UiElements/TabContentSlider.vue')
   },
   data() {
     return {

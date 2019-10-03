@@ -15,7 +15,7 @@ export default {
   name: 'TabContentSlider',
   props: {
     content: {
-      require: true,
+      required: true,
       type: [Object, Array]
     }
   }
