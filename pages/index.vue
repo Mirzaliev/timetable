@@ -109,7 +109,7 @@ export default {
   position: relative
   width: 100%
   &-container
-    width: 40%
+    width: 44rem
     margin: 0 auto
     padding: 0 1rem
   &-search-wrap

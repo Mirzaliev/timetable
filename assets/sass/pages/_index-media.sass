@@ -1,46 +1,68 @@
 @include respond(allmostAllLargeTabletPortain)
   .searchPage
     .searchPage-container
-      width: 70%
+      width: 42rem
 @include respond(allmostAllTabletPortain)
   .searchPage
     .searchPage-container
-      width: 90%
+      width: 39rem
+    .tab-content .tab-content__btn
+      padding: .5rem .3rem
+      font-size: .95em
 @include respond(allmostAllPhonePortain)
   .searchPage
     .searchPage-container
       width: 100%
       padding: 0 .7rem
     .searchPage-tabs-wrap
-      padding: .7rem
       margin: 0
     .nav-tabs .tab .tabs__link
       font-size: .99em
     .groups-tab-wrapper
+      .faculties-wrapper
+        margin-bottom: 1rem
       .selected-faculty
         font-size: .88em
-      .faculties-list a
-        flex-basis: 22%
-        padding: .5rem .2rem
-        &:last-child, &:nth-child(4)
-          margin-right: 0
     .groups-tab-wrapper
       .course
         flex-direction: column
-        margin-bottom: .5rem
+        margin-bottom: 1.5rem
         &-info
           text-align: center
           font-size: .8rem
           margin-bottom: 1rem
-        &-groups
-          a
-            flex-basis: 22%
-            padding: .5rem .2rem
-            font-size: .88em
-            &:nth-child(4n+4)
-              margin-right: 0
+          margin-right: 0
+    .tab-content .tab-content__btn
+      padding: .5rem .3rem
+      font-size: .9em
+    .groups-tab-wrapper .faculties-list .tab-content__btn
+      flex-basis: 23.875%
+      &:nth-child(4n + 4)
+        margin-right: 0
+    .groups-tab-wrapper .course-groups .tab-content__btn
+      flex-basis: 31.8%!important
+      &:nth-child(3n + 3)
+        margin-right: 0
+      &:nth-child(4n + 4)
+        margin-right: 1.5%!important
+@include respond(smallTabletPortain)
+  .searchPage
+    .groups-tab-wrapper .faculties-list .tab-content__btn
+      flex-basis: 18.8%
+      &:nth-child(5n + 5)
+        margin-right: 0
+      &:nth-child(4n + 4)
+        margin-right: 1.5%
 @include respond(allmostAllPhoneLandscape)
   .searchPage
     .searchPage-container
       width: 80%
       padding: 0 .7rem
+@media only screen and (max-width: 530px)
+  .searchPage
+    .groups-tab-wrapper .course-groups .tab-content__btn
+      flex-basis: 23.5%
+      &:nth-child(4n + 4)
+        margin-right: 0
+      &:nth-child(5n + 5)
+        margin-right: 1.5%

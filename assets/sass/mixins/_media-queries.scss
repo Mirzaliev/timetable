@@ -90,6 +90,11 @@ $breakpoints: (
       @content
     }
   }
+  @else if $media == smallTabletPortain {
+    @media only screen and (min-width: 412px) and (max-width: 766px) {
+      @content
+    }
+  }
   @else if $media == allmostAllPhonePortain {
     @media only screen and (min-width: 320px) and (max-width: 767px) {
       @content
@@ -97,6 +102,11 @@ $breakpoints: (
   }
   @else if $media == allmostAllPhoneLandscape {
     @media only screen and (min-width: 480px) and (max-width: 768px) and (orientation: landscape)   {
+      @content
+    }
+  }
+  @else if $media == smallScreenPhones {
+    @media only screen and (min-width: 310px) and (max-width: 376px) {
       @content
     }
   }

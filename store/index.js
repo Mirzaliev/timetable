@@ -1,10 +1,14 @@
 export const state = () => ({
-  searchPageWrapHeight: 0
+  searchPageWrapHeight: 0,
+  size: null
 })
 
 export const mutations = {
   setSearchPageWrapHeight(state, height) {
     state.searchPageWrapHeight = height
+  },
+  setSize(state, size) {
+    state.size = size
   }
 }
 

@@ -83,11 +83,13 @@ export default {
       line-height: 1
       border-radius: .222rem
       font-family: $medium
+      word-wrap: normal
+      white-space: nowrap
       color: $accent
       text-align: center
       border: 1px solid $accent
-      margin-bottom: .5rem
-      margin-right: .5rem
+      margin-bottom: 1.5%
+      margin-right: 1.5%
     &__btn_active
       border-color: $accent
       background-color: $accent

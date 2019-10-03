@@ -37,6 +37,24 @@ export default {
           course: 1,
           groups: [
             {
+              name: '711-ПЕРZS'
+            },
+            {
+              name: '711-ПЕРZS'
+            },
+            {
+              name: '711-ПЕРZS'
+            },
+            {
+              name: '711-ПЕРZS'
+            },
+            {
+              name: '711-ПЕРZS'
+            },
+            {
+              name: '711-ПЕРZS'
+            },
+            {
               name: '311-ИБ'
             },
             {
@@ -58,7 +76,7 @@ export default {
               name: '311-ИБ'
             },
             {
-              name: '311-ИСТ'
+              name: '711-ПЕРZS'
             },
             {
               name: '311-ПМИ'
@@ -70,7 +88,7 @@ export default {
               name: '311-ПРИ'
             },
             {
-              name: '311-ИБ'
+              name: '214-ТОРZS'
             }
           ]
         },
@@ -78,52 +96,94 @@ export default {
           course: 2,
           groups: [
             {
-              name: 'ПИ-821'
+              name: '211-ОРМ'
             },
             {
-              name: '311-ИБ'
+              name: '211-РСО'
             },
             {
-              name: '311-ИСТ'
+              name: '211-ТД'
             },
             {
-              name: '311-ПМИ'
+              name: '211-ТОВ'
             },
             {
-              name: '311-ПИИ'
+              name: '211-ТОР'
             },
             {
-              name: '311-ПРИ'
+              name: '211-ТД'
             },
             {
-              name: '311-ИБ'
+              name: '212-ТОР'
+            },
+            {
+              name: '212-ТД'
+            },
+            {
+              name: '213-ТОР'
+            },
+            {
+              name: '213-ТОР'
+            },
+            {
+              name: '213-ТОРZ'
+            },
+            {
+              name: '213-ТОРZ'
+            },
+            {
+              name: '211-ОРМZ'
+            },
+            {
+              name: '211-УКZ'
+            },
+            {
+              name: '211-РСОZ'
+            },
+            {
+              name: '211-ТОРZS'
+            },
+            {
+              name: '212-ТОРZS'
+            },
+            {
+              name: '213-ТОРZS'
+            },
+            {
+              name: '211-УКZS'
+            },
+            {
+              name: '211-ТДZ'
+            },
+            {
+              name: '211-ТДZS'
             }
           ]
         },
         {
           course: 3,
           groups: [
-            {
-              name: 'ПИ-821'
-            },
-            {
-              name: '311-ИБ'
-            },
-            {
-              name: '311-ИСТ'
-            },
-            {
-              name: '311-ПМИ'
-            },
-            {
-              name: '311-ПИИ'
-            },
-            {
-              name: '311-ПРИ'
-            },
-            {
-              name: '311-ИБ'
-            }
+            { name: '531-ЭК' },
+            { name: '532-ЭК' },
+            { name: '533-ЭК' },
+            { name: '534-ЭК' },
+            { name: '535-ЭК' },
+            { name: '536-ЭК' },
+            { name: '531-ЭКZ' },
+            { name: '532-ЭКZ' },
+            { name: '533-ЭКZ' },
+            { name: '531-ЭКZS' },
+            { name: '532-ЭКZS' },
+            { name: '533-ЭКZS' },
+            { name: '534-ЭКZS' },
+            { name: '535-ЭКZS' },
+            { name: '536-ЭКZS' },
+            { name: '537-ЭКZS' },
+            { name: '538-ЭКZS' },
+            { name: '539-ЭКZS' },
+            { name: '5310-ЭКZS' },
+            { name: '5311-ЭКZS' },
+            { name: '5312-ЭКZS' }
           ]
         }
       ]
@@ -140,8 +200,10 @@ export default {
     &-wrapper
       margin-bottom: 2rem
     &-list
-      a
-        flex: 0 0 14.2857%
+      .tab-content__btn
+        flex: 0 0 13%
+        &:last-child
+          margin-right: 0
   .selected-faculty
     font-family: $bold
     color: $text

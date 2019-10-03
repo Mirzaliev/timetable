@@ -46,4 +46,8 @@ export default {
       font-size: 1.8em
       text-align: center
     &-groups
+      .tab-content__btn
+        flex: 0 1 18.8%
+        &:nth-child(5n + 5)
+          margin-right: 0
 </style>
