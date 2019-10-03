@@ -109,6 +109,10 @@ export default {
       border-color: $accent
       background-color: $accent
       color: white
+    .v-spinner
+      display: flex
+      justify-content: center
+      padding: 2rem 0
   .tab-content_flexGrid
     display: flex
     flex-flow: row wrap

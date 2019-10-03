@@ -15,11 +15,14 @@
       Факультет Компьютерных технологий и информационной безопасности
     </div>
     <div class="groups-wrapper">
-      <course
-        v-for="(course, index) in courses"
-        :key="index"
-        :course="course"
-      ></course>
+      <spinner :loading="loading" color="#2962FF" size="45px"></spinner>
+      <div v-if="!loading" class="groups-list">
+        <course
+          v-for="(course, index) in courses"
+          :key="index"
+          :course="course"
+        ></course>
+      </div>
     </div>
   </div>
 </template>
@@ -29,10 +32,12 @@ export default {
   name: 'GroupsTabsContent',
   components: {
     course: () =>
-      import('~/components/index/UiElements/EveryCourseWithGroups.vue')
+      import('~/components/index/UiElements/EveryCourseWithGroups.vue'),
+    spinner: () => import('vue-spinner/src/DotLoader.vue')
   },
   data() {
     return {
+      loading: true,
       courses: [
         {
           course: 1,
