@@ -1,18 +1,29 @@
 export const state = () => ({
   searchPageWrapHeight: 0,
-  size: null
+  size: null,
+  error: [],
+  faculties: []
 })
 
 export const mutations = {
   setSearchPageWrapHeight(state, height) {
     state.searchPageWrapHeight = height
   },
-  setSize(state, size) {
+  SET_SIZE(state, size) {
     state.size = size
+  },
+  SET_FACULTIES(state, faculties) {
+    state.faculties = faculties
   }
 }
 
 export const actions = {
+  // При загрузке приложения
+  async nuxtServerInit({ commit }) {
+    // Загружаем факультеты
+    const data = await this.$axios.$get('/faculties')
+    commit('SET_FACULTIES', data)
+  },
   calculateSearchPageWrapHeight({ commit }, size) {
     if (!size) {
       return
@@ -28,5 +39,6 @@ export const actions = {
 }
 
 export const getters = {
-  getSearchPageWrapHeight: (s) => s.searchPageWrapHeight
+  getSearchPageWrapHeight: (s) => s.searchPageWrapHeight,
+  GET_FACULTIES: (s) => s.faculties
 }

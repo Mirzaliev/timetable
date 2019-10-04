@@ -1,5 +1,6 @@
 module.exports = {
   mode: 'universal',
+  debug: true,
   /*
    ** Headers of the page
    */
@@ -36,6 +37,7 @@ module.exports = {
    */
   plugins: [
     '~plugins/vue-js-modal',
+    '~/plugins/axios',
     { src: '~/plugins/popover.js', mode: 'client' }
   ],
   /*
@@ -48,7 +50,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/svg-sprite'],
+  modules: ['@nuxtjs/svg-sprite', '@nuxtjs/axios'],
   /*
    ** Build configuration
    */

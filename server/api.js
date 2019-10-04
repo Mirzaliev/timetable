@@ -29,30 +29,46 @@ server.get('/search', (req, res) => {
 })
 
 server.get('/groups', (req, res) => {
-  if (!req.query.name) res.status(500).send('Отсутсвуют параметры для поиска')
-  const groups = db.get('groups').find({ name: req.query.name })
-  return res.jsonp(groups.get('groups'))
+  if (!req.query.faculty)
+    res.status(400).send('-/groups- Неверный запрос. Отсутствуют параметры!')
+  const groups = db
+    .get('groups')
+    .find({ name: req.query.faculty })
+    .get('groups')
+  if (!groups) res.status(503).send('- /groups - Непредвиденная ошибка сервера')
+  return res.jsonp(groups)
 })
 
 server.get('/teachers', (req, res) => {
-  if (!req.query.sort) res.status(500).send('Отсутсвуют параметры для поиска')
+  if (!req.query.sort)
+    res.status(400).send('-/teachers- Неверный запрос. Отсутствуют параметры!')
   const teachers = db.get('teachers').find({ name: req.query.sort })
+  if (!teachers)
+    res.status(503).send('- /teachers - Непредвиденная ошибка сервера')
   return res.jsonp(teachers)
 })
 
 server.get('/classroom', (req, res) => {
-  console.log(req.query.sort)
-  if (!req.query.sort) res.status(500).send('Отсутсвуют параметры для поиска')
-  const classroom = db.get('classroom').find({ name: Number(req.query.sort) })
+  if (!req.query.sort)
+    res.status(400).send('-/classroom- Неверный запрос. Отсутствуют параметры!')
+  const classroom = db
+    .get('classroom')
+    .find({ name: Number(req.query.sort) })
+    .value()
+  if (!classroom)
+    res.status(503).send('- /classroom - Непредвиденная ошибка сервера')
   return res.jsonp(classroom)
 })
 
-server.get('faculties', (req, res) => {
-  res.jsonp(db.get('faculties'))
+server.get('/faculties', (req, res) => {
+  const faculties = db.get('faculties').value()
+  if (!faculties)
+    res.status(503).send('- /faculties - Непредвиденная ошибка сервера')
+  res.jsonp(faculties)
 })
 
 server.use(middlewares)
 server.use(router)
 server.listen(4000, () => {
-  console.log('JSON Server is running')
+  console.log('JSON Api Server is running')
 })
