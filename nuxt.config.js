@@ -5,8 +5,8 @@ module.exports = {
    ** Headers of the page
    */
   server: {
-    // host: '192.168.0.106',
-    // port: 3000
+    host: '192.168.1.6',
+    port: 8080
   },
   head: {
     title: process.env.npm_package_name || '',

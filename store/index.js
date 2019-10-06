@@ -4,7 +4,6 @@ export const state = () => ({
   error: [],
   faculties: []
 })
-
 export const mutations = {
   setSearchPageWrapHeight(state, height) {
     state.searchPageWrapHeight = height
@@ -16,7 +15,6 @@ export const mutations = {
     state.faculties = faculties
   }
 }
-
 export const actions = {
   // При загрузке приложения
   async nuxtServerInit({ commit }) {

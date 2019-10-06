@@ -2,17 +2,21 @@
   <div class="groups-tab-wrapper tab-content-wrapper">
     <div class="faculties-wrapper">
       <div class="faculties-list tab-content_flexGrid">
-        <a href="#" class="tab-content__btn tab-content__btn_active">МиП</a>
-        <a href="#" class="tab-content__btn">КТиИБ</a>
-        <a href="#" class="tab-content__btn">КТиИ</a>
-        <a href="#" class="tab-content__btn">МиП</a>
-        <a href="#" class="tab-content__btn">КТиИБ</a>
-        <a href="#" class="tab-content__btn">КТиИ</a>
-        <a href="#" class="tab-content__btn">ЮрФак</a>
+        <a
+          v-for="(faculty, i) in faculties"
+          :key="i"
+          href="#"
+          class="tab-content__btn"
+          :class="{
+            'tab-content__btn_active': faculty.name === selectedFaculty.name
+          }"
+          @click.prevent="selectFaculty(faculty)"
+          >{{ faculty.name }}</a
+        >
       </div>
     </div>
     <div class="tab-content__hint">
-      Факультет Компьютерных технологий и информационной безопасности
+      {{ selectedFaculty.shortName }}
     </div>
     <div class="groups-wrapper">
       <spinner :loading="loading" color="#2962FF" size="45px"></spinner>
@@ -28,6 +32,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   name: 'GroupsTabsContent',
   components: {
@@ -38,6 +43,7 @@ export default {
   data() {
     return {
       loading: false,
+      selectedFaculty: this.$store.state.faculties[0],
       courses: [
         {
           course: 1,
@@ -193,6 +199,16 @@ export default {
           ]
         }
       ]
+    }
+  },
+  computed: {
+    ...mapGetters({
+      faculties: 'GET_FACULTIES'
+    })
+  },
+  methods: {
+    selectFaculty(faculty) {
+      this.selectedFaculty = faculty
     }
   }
 }
