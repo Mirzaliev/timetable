@@ -4,10 +4,10 @@ module.exports = {
   /*
    ** Headers of the page
    */
-  server: {
-    host: '192.168.1.6',
-    port: 8080
-  },
+  // server: {
+  //   host: '192.168.1.6',
+  //   port: 8080
+  // },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -27,7 +27,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#FF0000' },
+  loading: { name: 'circle', color: '#FF0000' },
   /*
    ** Global CSS
    */

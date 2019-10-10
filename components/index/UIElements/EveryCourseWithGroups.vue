@@ -10,7 +10,7 @@
         :key="index"
         href="#"
         class="tab-content__btn"
-        >{{ group.name }}</a
+        >{{ group.group }}</a
       >
     </div>
   </div>

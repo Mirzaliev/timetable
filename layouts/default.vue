@@ -30,7 +30,7 @@ export default {
         this.$store.dispatch('calculateSearchPageWrapHeight', { hh, _ww })
       })
       window.addEventListener('orientationchange', () => {
-        const hh = this.$refs.layoutHeader.offsetHeight
+        console.log('orientationchange default.vue updated')
         this.$store.dispatch('calculateSearchPageWrapHeight', { hh })
       })
     })

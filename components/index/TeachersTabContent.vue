@@ -82,6 +82,7 @@ export default {
 <style lang="sass">
 .searchPage
   .teachers-wrapper
+    position: relative
     .teacher-list
       .tab-content__btn
         display: flex!important

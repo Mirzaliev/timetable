@@ -35,6 +35,7 @@ server.get('/groups', (req, res) => {
     .get('groups')
     .find({ name: req.query.faculty })
     .get('groups')
+    .value()
   if (!groups) res.status(503).send('- /groups - Непредвиденная ошибка сервера')
   return res.jsonp(groups)
 })
@@ -42,7 +43,7 @@ server.get('/groups', (req, res) => {
 server.get('/teachers', (req, res) => {
   if (!req.query.sort)
     res.status(400).send('-/teachers- Неверный запрос. Отсутствуют параметры!')
-  const teachers = db.get('teachers').find({ name: req.query.sort })
+  const teachers = db.get('teachers').find({ name: req.query.sort }).value()
   if (!teachers)
     res.status(503).send('- /teachers - Непредвиденная ошибка сервера')
   return res.jsonp(teachers)

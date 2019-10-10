@@ -110,9 +110,15 @@ export default {
       background-color: $accent
       color: white
     .v-spinner
-      display: flex
-      justify-content: center
-      padding: 2rem 0
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: white
+      opacity: .85
+      > div
+        margin: 1.33rem auto 0 auto
   .tab-content_flexGrid
     display: flex
     flex-flow: row wrap
