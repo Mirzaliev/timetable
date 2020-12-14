@@ -4,12 +4,10 @@ module.exports = {
   /*
    ** Headers of the page
    */
-  // server: {
-  //   host: '192.168.1.6',
-  //   port: 8080
-  // },
   head: {
     title: process.env.npm_package_name || '',
+    baseUrl: process.env.BASE_URL || '/',
+    base: { href: '/' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -39,6 +37,7 @@ module.exports = {
     '~plugins/vue-js-modal',
     '~/plugins/axios',
     { src: '~/plugins/popover.js', mode: 'client' }
+    // { src: '~/plugins/datepicker.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules

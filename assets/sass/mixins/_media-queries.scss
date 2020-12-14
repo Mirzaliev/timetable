@@ -4,25 +4,22 @@
 
 // A map of breakpoints.
 $breakpoints: (
-        phoneMin: 319.99px,
-        phone: 576.99px,
-        tablet: 768.99px,
-        laptop: 1024.99px,
-        laptopL: 1440.99px,
-        lg: 2560px,
+  phoneMin: 319.99px,
+  phone: 576.99px,
+  tablet: 768.99px,
+  laptop: 1024.99px,
+  laptopL: 1440.99px,
+  lg: 2560px
 );
 
 //
 //  RESPOND BELOW
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-
 // @include respond-below(sm) {}
 @mixin respond-below($breakpoint) {
-
   // If the breakpoint exists in the map.
   @if map-has-key($breakpoints, $breakpoint) {
-
     // Get the breakpoint value.
     $breakpoint-value: map-get($breakpoints, $breakpoint);
 
@@ -33,18 +30,14 @@ $breakpoints: (
 
     // If the breakpoint doesn't exist in the map.
   } @else {
-
     // Log a warning.
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }
 
-
 @mixin respond-between($lower, $upper) {
-
   // If both the lower and upper breakpoints exist in the map.
   @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
-
     // Get the lower and upper breakpoints.
     $lower-breakpoint: map-get($breakpoints, $lower);
     $upper-breakpoint: map-get($breakpoints, $upper);
@@ -54,110 +47,90 @@ $breakpoints: (
       @content;
     }
 
-  // If one or both of the breakpoints don't exist.
+    // If one or both of the breakpoints don't exist.
   } @else {
-
     // If lower breakpoint is invalid.
     @if (map-has-key($breakpoints, $lower) == false) {
-
       // Log a warning.
       @warn 'Your lower breakpoint was invalid: #{$lower}.';
     }
 
     // If upper breakpoint is invalid.
     @if (map-has-key($breakpoints, $upper) == false) {
-
       // Log a warning.
       @warn 'Your upper breakpoint was invalid: #{$upper}.';
     }
   }
 }
 
-@mixin respond($media){
+@mixin respond($media) {
   @if $media == laptop {
-    @media screen and (min-device-width: 1366px) and (max-device-width: 1566px)and (-webkit-min-device-pixel-ratio: 1) {
-      @content
+    @media screen and (min-width: 1365px) and (max-width: 1566px) {
+      @content;
     }
   }
-    // Многие планшеты
+  // Многие планшеты
   @else if $media == allmostAllLargeTabletPortain {
     @media only screen and (min-width: 1024px) and (max-width: 1366px) {
-      @content
+      @content;
     }
-  }
-  @else if $media == allmostAllTabletPortain {
-    @media (min-width: 768px) and (max-width: 1023px){
-      @content
+  } @else if $media == allmostAllTabletPortain {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      @content;
     }
-  }
-  @else if $media == smallTabletPortain {
+  } @else if $media == smallTabletPortain {
     @media only screen and (min-width: 412px) and (max-width: 766px) {
-      @content
+      @content;
     }
-  }
-  @else if $media == allmostAllPhonePortain {
+  } @else if $media == allmostAllPhonePortain {
     @media only screen and (min-width: 320px) and (max-width: 767px) {
-      @content
+      @content;
     }
-  }
-  @else if $media == allmostAllPhoneLandscape {
-    @media only screen and (min-width: 480px) and (max-width: 768px) and (orientation: landscape)   {
-      @content
+  } @else if $media == allmostAllPhoneLandscape {
+    @media only screen and (min-width: 480px) and (max-width: 768px) and (orientation: landscape) {
+      @content;
     }
-  }
-  @else if $media == smallScreenPhones {
+  } @else if $media == smallScreenPhones {
     @media only screen and (min-width: 310px) and (max-width: 376px) {
-      @content
+      @content;
     }
   }
-   // Отдельно
+  // Отдельно
   @else if $media == ipadPro12 {
     @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-      @content
+      @content;
     }
-  }
-  @else if $media == ipadPro12-portain {
+  } @else if $media == ipadPro12-portain {
     @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-      @content
+      @content;
     }
-  }
-
-  @else if $media == ipadPro12-landscape {
+  } @else if $media == ipadPro12-landscape {
     @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-      @content
+      @content;
     }
-  }
-
-  @else if $media == ipadPro9 {
+  } @else if $media == ipadPro9 {
     @media (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 2) {
-      @content
+      @content;
     }
-  }
-
-  @else if $media == ipadPro9-portain {
-    @media only screen and (min-device-width: 768px) and (max-device-width: 800px) and (orientation: portrait)  and (-webkit-min-device-pixel-ratio: 2) {
-      @content
+  } @else if $media == ipadPro9-portain {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 800px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
     }
-  }
-  @else if $media == ipadPro9-landscape {
-    @media only screen and (min-device-width: 1024px) and (max-device-width: 1200px)  and (orientation: landscape)  and (-webkit-min-device-pixel-ratio: 2) {
-      @content
+  } @else if $media == ipadPro9-landscape {
+    @media only screen and (min-device-width: 1024px) and (max-device-width: 1200px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
     }
-  }
-
-  @else if $media == galaxyTab2 {
-    @media  (min-device-width: 800px) and (max-device-width: 1280px) {
-      @content
+  } @else if $media == galaxyTab2 {
+    @media (min-device-width: 800px) and (max-device-width: 1280px) {
+      @content;
     }
-  }
-  @else if $media == galaxyTab2-portain {
+  } @else if $media == galaxyTab2-portain {
     @media (min-device-width: 800px) and (orientation: portrait) {
-      @content
+      @content;
     }
-  }
-  @else if $media == galaxyTab2-landscape {
-    @media (max-device-width: 1280px) and (orientation: landscape){
-      @content
+  } @else if $media == galaxyTab2-landscape {
+    @media (max-device-width: 1280px) and (orientation: landscape) {
+      @content;
     }
   }
 }

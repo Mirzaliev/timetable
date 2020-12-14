@@ -28,7 +28,6 @@ export const actions = {
     }
     const wh = window.innerHeight
     if (size._ww && window.innerWidth !== size._ww) {
-      alert(window.innerWidth !== size._ww)
       commit('setSearchPageWrapHeight', `${wh - size.hh}px`)
       return
     }
