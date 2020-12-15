@@ -32,4 +32,5 @@ export default {
     display: flex!important
     &:focus
       outline: none!important
+
 </style>
