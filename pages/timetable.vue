@@ -1,30 +1,35 @@
 <template>
-  <div class="tt-nav">
-    <div class="tt-title">
-      <span class="tt-title_hint">Расписание группы</span> ПИ-811
-    </div>
-    <div class="tt-toolbar">
-      <dropdown
-        :options="arrayOfObjects"
-        :selected="object"
-        :placeholder="'Select an Item'"
-        :close-on-outside-click="false"
-        @updateOption="methodToRunOnSelect"
-      ></dropdown>
+  <div class="timetable-wrapper">
+    <div class="tt-nav">
+      <div class="tt-title">
+        <span class="tt-title_hint">Расписание группы</span> ПИ-811
+      </div>
+      <div class="tt-toolbar">
+        <dropdown
+          :options="arrayOfObjects"
+          :selected="object"
+          :placeholder="'Select an Item'"
+          :close-on-outside-click="false"
+          @updateOption="methodToRunOnSelect"
+        ></dropdown>
+      </div>
     </div>
     <div class="timetable">
-      <div class="timetable-lesson-number">
-        <div class="timetable-lsNumDiv">1</div>
-        <div class="timetable-lsNumDiv">2</div>
-        <div class="timetable-lsNumDiv">3</div>
-        <div class="timetable-lsNumDiv">4</div>
+      <div class="timetable-lessons-numbers">
+        <div class="timetable-lessons__number">1</div>
+        <div class="timetable-lessons__number">2</div>
+        <div class="timetable-lessons__number">3</div>
       </div>
-      <div class="timetable-lesson">
-        <VueSlickCarousel :arrows="false" :dots="false">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
+      <div class="timetable-lessons-wrapper lessons">
+        <VueSlickCarousel v-bind="settingSlick">
+          <LessonsDays></LessonsDays>
+          <LessonsDays></LessonsDays>
+          <LessonsDays></LessonsDays>
+          <LessonsDays></LessonsDays>
+          <LessonsDays></LessonsDays>
+          <LessonsDays></LessonsDays>
+          <LessonsDays></LessonsDays>
+          <LessonsDays></LessonsDays>
         </VueSlickCarousel>
       </div>
     </div>
@@ -33,6 +38,7 @@
 <script>
 import dropdown from 'vue-dropdowns/Dropdown.vue'
 import VueSlickCarousel from 'vue-slick-carousel'
+import LessonsDays from '~/components/timetable/LessonsDays.vue'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
@@ -40,10 +46,18 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default {
   components: {
     dropdown,
+    LessonsDays,
     VueSlickCarousel
   },
   data() {
     return {
+      settingSlick: {
+        speed: 2500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        touchThreshold: 1,
+        infinite: false
+      },
       arrayOfObjects: [
         {
           name: 'dsfdsfdsf'
@@ -71,17 +85,28 @@ export default {
 .timetable
   margin: 0 10px
   display: flex
-  &-lesson-number
-    width: 5%
-    background-color: red
+  &-lessons-numbers
+    width: 3%
+    /*background-color: red*/
     display: flex
     flex-direction: column
     justify-content: space-between
-  &-lsNumDiv
-    background: #ccc
+    margin-top: 1.2em + 0.8em
+  &-numbers
+    /*background: #ccc*/
     height: 100%
     margin: 5px
-  &-lesson
-    height: 600px
-    width: 100%
+  &-lessons__number
+    display: flex
+    align-items: center
+    height: 130px
+    background: #ccc
+  &-lessons-wrapper
+    width: 97%
+    .slick-slider .slick-slide
+      padding-right: 0.888rem
+      &:first-child
+        padding-left: 0.5rem
+      > div:focus
+        outline: none
 </style>
