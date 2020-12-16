@@ -36,10 +36,12 @@ export default {
   &:last-child
     margin-bottom: 0.1em
 .lessons-lesson
-  display: flex
+  display: flex!important
   flex-direction: column
   height: 100%
   padding: 0.7em
+  &:focus
+    outline: none!important
   &__number
     display: none
   &__name

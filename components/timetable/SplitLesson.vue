@@ -25,12 +25,26 @@ export default {
         touchThreshold: 1,
         infinite: false,
         swipeToSlide: false,
-        swipe: false,
-        arrows: false
+        swipe: false
       }
     }
   }
 }
 </script>
 
-<style></style>
+<style lang="sass">
+.lessons-list-item
+  .slick-slider , .slick-list, .slick-track, .slick-slide, .slick-slide > div
+    height: 100%
+  .slick-slider .slick-slide
+    padding: 0!important
+    .slick-arrows
+      border: 0
+    .slick-prev, .slick-next
+      &:before
+        color: black
+        opacity: 1
+    .slick-prev
+
+    .slick-next
+</style>

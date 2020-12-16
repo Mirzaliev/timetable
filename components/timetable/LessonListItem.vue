@@ -22,15 +22,4 @@ export default {
 }
 </script>
 
-<style lang="sass">
-.lessons-list-item
-  .slick-slider , .slick-list, .slick-track, .slick-slide, .slick-slide > div
-    height: 100%
-  .slick-slider .slick-slide
-    padding: 0!important
-  .lessons-lesson
-    display: flex!important
-    &:focus
-      outline: none!important
-
-</style>
+<style lang="sass"></style>

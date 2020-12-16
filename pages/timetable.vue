@@ -5,13 +5,15 @@
         <span class="tt-title_hint">Расписание группы</span> ПИ-811
       </div>
       <div class="tt-toolbar">
-        <dropdown
-          :options="arrayOfObjects"
-          :selected="object"
-          :placeholder="'Select an Item'"
-          :close-on-outside-click="false"
-          @updateOption="methodToRunOnSelect"
-        ></dropdown>
+        <client-only placeholder="Загрузка">
+          <dropdown
+            :options="arrayOfObjects"
+            :selected="object"
+            :placeholder="'Select an Item'"
+            :close-on-outside-click="false"
+            @updateOption="methodToRunOnSelect"
+          ></dropdown>
+        </client-only>
       </div>
     </div>
     <div class="timetable">
