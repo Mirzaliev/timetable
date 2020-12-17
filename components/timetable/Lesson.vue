@@ -1,14 +1,21 @@
 <template>
   <div class="lessons-lesson">
     <div class="lessons-lesson-topBlock">
-      <span class="lessons-lesson__number">1 урок</span>
-      <span class="lessons-lesson__name">
-        Культура речи и деловое общение
-      </span>
-      <span class="lessons-lesson__teacher">доц. Полякова А.И</span>
+      <span class="lessons-lesson__number lessons-lesson_greyText lh-1"
+        >1 урок</span
+      >
+      <div class="lessons-lesson__name">
+        Культура речи и деловое общение и практика обществознания и пустой текст
+        какой для верстки
+      </div>
+      <span class="lessons-lesson__teacher lessons-lesson_greyText lh-1"
+        >доц. Полякова А.И</span
+      >
     </div>
-    <div class="lessons-lesson-footerBlock">
-      <span class="lessons-lesson__label practice">практика</span>
+    <div class="lessons-lesson-footerBlock lh-1">
+      <span class="lessons-lesson__label lessons-lesson__label_practice"
+        >практика</span
+      >
       <span class="lessons-lesson__label lessons-lesson__label_classroom"
         >ауд.201</span
       >
@@ -22,34 +29,37 @@
 <script>
 export default {
   name: 'Lesson'
+  // Надо добавить проверку  display: -webkit-box
 }
 </script>
 
 <style lang="sass">
 @import "../../assets/sass/vars"
-.lessons-list-item
-  height: 130px
-  //padding: 0.7em
-  margin-bottom: 0.8em
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .25)
-  border-radius: 5px
-  &:last-child
-    margin-bottom: 0.1em
 .lessons-lesson
   display: flex!important
   flex-direction: column
   height: 100%
-  padding: 0.7em
+  padding: 0.5em
   &:focus
     outline: none!important
   &__number
-    display: none
+    display: block
   &__name
+    display: block
+    display: -webkit-box
+    line-height: 1.1
     color: $accent
     font-family: $medium
+    text-overflow: ellipsis
+    //white-space: nowrap
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    overflow: hidden
+    max-width: 100%
+    max-height: 2.5rem
+    margin: 0.33rem 0
   &__teacher
-    font-size: 0.88em
-    color: $grey-for-text
+    //
   &-topBlock
     display: flex
     flex-direction: column
@@ -60,19 +70,22 @@ export default {
   &__label
     display: block
     color: white
-    font-size: 0.7em
-    padding: 0.1em 0.3em
+    font-size: 0.8em
+    padding: 0.4em 0.6em
     margin-right: 0.5em
     border-radius: 5px
-    &.practice
+    &_practice
       background-color: $pink
-    .lecture
+    &_lecture
       background-color: $success
-    .laboratory
+    &_laboratory
       background-color: $warning
     &_classroom
       background-color: $danger
     &_time
       border: $color-for-border 1px solid
       color: $text
+  &_greyText
+    font-size: 0.88em
+    color: $grey-for-text
 </style>

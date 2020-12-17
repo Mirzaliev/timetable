@@ -111,4 +111,8 @@ export default {
         padding-left: 0.5rem
       > div:focus
         outline: none
+.lh-1
+  line-height: 1
+.lh_12
+  line-height: 1.2
 </style>

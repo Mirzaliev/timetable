@@ -37,7 +37,7 @@ export default {
       font-family: $bold
     &__date
       font-size: 0.8em
-  .lessons-list
+  .lessons-list, .lessons-day
     &:focus
       outline: none!important
 </style>
