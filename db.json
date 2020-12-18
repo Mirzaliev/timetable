@@ -30,992 +30,1568 @@
      }
   ],
   "timetable":[
-     {
-        "group":"321-ИСТ",
-        "week":"even",
-        "groupTimetable":[
-           {
-              "date":"7.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Дискретная математика",
-                          "teacher":"доц.Алексейчик Т.В.",
-                          "teacherFullName":"доц.Алексейчик Т.В.",
-                          "type":"Лекция",
-                          "classroom":"ауд.313"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Туриченко Л.П.",
-                          "teacherFullName":"ст.пр.Туриченко Л.П.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 }
+    {
+      "id": "1 ",
+      "group": "311-ПИ",
+      "week": "even",
+      "typeOfTraining": "undergrad",
+      "groupLessons": [
+        {
+          "id": "1 ",
+          "dayDate": "14 Декабря",
+          "dayName": "Понедельник",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
               ]
-           },
-           {
-              "date":"8.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"8:30 — 10:00",
-                    "lessonNumber":1,
-                    "lessons":[
-                       {
-                          "title":"Объектно- ориентированное программирование",
-                          "teacher":"доц.Глушенко С.А.",
-                          "teacherFullName":"доц.Глушенко С.А.",
-                          "type":"Лекция",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Проектирование баз данных",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Элективные дисциплины ( модули) по физической культуре и спорту",
-                          "teacher":"NN-препод.",
-                          "teacherFullName":"NN-препод.",
-                          "type":"Практика",
-                          "classroom":"ауд.сз"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
               ]
-           },
-           {
-              "date":"9.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Практика",
-                          "classroom":"ауд.653"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
               ]
-           },
-           {
-              "date":"10.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Информатика",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Архитектура компьютеров",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.309"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Всеобщая история",
-                          "teacher":"доц.Мерзлякова И.Л.",
-                          "teacherFullName":"доц.Мерзлякова И.Л.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
               ]
-           },
-           {
-              "date":"11.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.303"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Математический анализ",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.309"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
               ]
-           },
-           {
-              "date":"12.10.2019",
-              "dateTimetable":[
-
+            }
+          ]
+        },
+        {
+          "id": "2 ",
+          "dayDate": "15 Декабря",
+          "dayName": "Вторник",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.359"
+                }
               ]
-           }
-        ]
-     },
-     {
-        "group":"321-ИСТ",
-        "week":"odd",
-        "groupTimetable":[
-           {
-              "date":"30.9.2019",
-              "dateTimetable":[
-                 {
-                    "time":"8:30 — 10:00",
-                    "lessonNumber":1,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.303"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Безопасность жизнедеятельности",
-                          "teacher":"ст.пр.Туриченко Л.П.",
-                          "teacherFullName":"ст.пр.Туриченко Л.П.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Математический анализ",
-                          "teacher":"проф.Сахарова Л.В.",
-                          "teacherFullName":"проф.Сахарова Л.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.314"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.451"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
               ]
-           },
-           {
-              "date":"1.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
               ]
-           },
-           {
-              "date":"2.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Практика",
-                          "classroom":"ауд.653"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
               ]
-           },
-           {
-              "date":"3.10.2019",
-              "dateTimetable":[
-
+            }
+          ]
+        },
+        {
+          "id": "3 ",
+          "dayDate": "16 Декабря",
+          "dayName": "Среда",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.359"
+                }
               ]
-           },
-           {
-              "date":"4.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"8:30 — 10:00",
-                    "lessonNumber":1,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.303"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Математический анализ",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.309"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Элективные дисциплины ( модули) по физической культуре и спорту",
-                          "teacher":"NN-препод.",
-                          "teacherFullName":"NN-препод.",
-                          "type":"Практика",
-                          "classroom":"ауд.сз"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
               ]
-           },
-           {
-              "date":"5.10.2019",
-              "dateTimetable":[
-
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
               ]
-           }
-        ]
-     },
-     {
-        "group":"311-ПМИ",
-        "week":"even",
-        "groupTimetable":[
-           {
-              "date":"7.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"8:30 — 10:00",
-                    "lessonNumber":1,
-                    "lessons":[
-                       {
-                          "title":"Дискретная математика",
-                          "teacher":"доц.Алексейчик Т.В.",
-                          "teacherFullName":"доц.Алексейчик Т.В.",
-                          "type":"Лекция",
-                          "classroom":"ауд.313"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Безопасность жизнедеятельности",
-                          "teacher":"ст.пр.Туриченко Л.П.",
-                          "teacherFullName":"ст.пр.Туриченко Л.П.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Математический анализ",
-                          "teacher":"проф.Сахарова Л.В.",
-                          "teacherFullName":"проф.Сахарова Л.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.314"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.451"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
               ]
-           },
-           {
-              "date":"8.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            }
+          ]
+        },
+        {
+          "id": "4 ",
+          "dayDate": "17 Декабря",
+          "dayName": "Четверг",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
               ]
-           },
-           {
-              "date":"9.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Практика",
-                          "classroom":"ауд.653"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.669"
+                }
               ]
-           },
-           {
-              "date":"10.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Информатика",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Архитектура компьютеров",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.309"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Всеобщая история",
-                          "teacher":"доц.Мерзлякова И.Л.",
-                          "teacherFullName":"доц.Мерзлякова И.Л.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
               ]
-           },
-           {
-              "date":"11.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"8:30 — 10:00",
-                    "lessonNumber":1,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.303"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Математический анализ",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.309"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Элективные дисциплины ( модули) по физической культуре и спорту",
-                          "teacher":"NN-препод.",
-                          "teacherFullName":"NN-препод.",
-                          "type":"Практика",
-                          "classroom":"ауд.сз"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
               ]
-           },
-           {
-              "date":"12.10.2019",
-              "dateTimetable":[
-
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
               ]
-           }
-        ]
-     },
-     {
-        "group":"311-ПМИ",
-        "week":"odd",
-        "groupTimetable":[
-           {
-              "date":"30.9.2019",
-              "dateTimetable":[
-                 {
-                    "time":"8:30 — 10:00",
-                    "lessonNumber":1,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.303"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Безопасность жизнедеятельности",
-                          "teacher":"ст.пр.Туриченко Л.П.",
-                          "teacherFullName":"ст.пр.Туриченко Л.П.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Математический анализ",
-                          "teacher":"проф.Сахарова Л.В.",
-                          "teacherFullName":"проф.Сахарова Л.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.314"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.451"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 6,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.359"
+                }
               ]
-           },
-           {
-              "date":"1.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            }
+          ]
+        },
+        {
+          "id": "5 ",
+          "dayDate": "18 Декабря",
+          "dayName": "Пятница",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
               ]
-           },
-           {
-              "date":"2.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Практика",
-                          "classroom":"ауд.653"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Алгебра и геометрия",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Практика",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык ( английский)",
-                          "teacher":"ст.пр.Рачинская Н.В.",
-                          "teacherFullName":"ст.пр.Рачинская Н.В.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.669"
+                }
               ]
-           },
-           {
-              "date":"3.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Информатика",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.303"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Архитектура компьютеров",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.309"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"13:50 — 15:20",
-                    "lessonNumber":4,
-                    "lessons":[
-                       {
-                          "title":"Всеобщая история",
-                          "teacher":"доц.Мерзлякова И.Л.",
-                          "teacherFullName":"доц.Мерзлякова И.Л.",
-                          "type":"Практика",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 }
+            }
+          ]
+        },
+        {
+          "id": "6 ",
+          "dayDate": "19 Декабря",
+          "dayName": "Суббота",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.669"
+                }
               ]
-           },
-           {
-              "date":"4.10.2019",
-              "dateTimetable":[
-                 {
-                    "time":"8:30 — 10:00",
-                    "lessonNumber":1,
-                    "lessons":[
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Гречкина В.Ю.",
-                          "teacherFullName":"ст.пр.Гречкина В.Ю.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.303"
-                       },
-                       {
-                          "title":"Иностранный язык",
-                          "teacher":"ст.пр.Ионова Е.С.",
-                          "teacherFullName":"ст.пр.Ионова Е.С.",
-                          "type":"Лабораторная",
-                          "classroom":"ауд.551"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"10:10 — 11:40",
-                    "lessonNumber":2,
-                    "lessons":[
-                       {
-                          "title":"Математический анализ",
-                          "teacher":"доц.Чувенков А.Ф.",
-                          "teacherFullName":"доц.Чувенков А.Ф.",
-                          "type":"Лекция",
-                          "classroom":"ауд.309"
-                       }
-                    ]
-                 },
-                 {
-                    "time":"11:50 — 13:20",
-                    "lessonNumber":3,
-                    "lessons":[
-                       {
-                          "title":"Элективные дисциплины ( модули) по физической культуре и спорту",
-                          "teacher":"NN-препод.",
-                          "teacherFullName":"NN-препод.",
-                          "type":"Практика",
-                          "classroom":"ауд.сз"
-                       }
-                    ]
-                 }
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.359"
+                }
               ]
-           },
-           {
-              "date":"5.10.2019",
-              "dateTimetable":[
-
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.359"
+                }
               ]
-           }
-        ]
-     }
+            }
+          ]
+        },
+        {
+          "id": "7 ",
+          "dayDate": "20 Декабря",
+          "dayName": "Воскресенье",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 6,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 7,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 8,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2 ",
+      "group": "321-ПИ",
+      "week": "even",
+      "typeOfTraining": "undergrad",
+      "groupLessons": [
+        {
+          "id": "1 ",
+          "dayDate": "14 Декабря",
+          "dayName": "Понедельник",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2 ",
+          "dayDate": "15 Декабря",
+          "dayName": "Вторник",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3 ",
+          "dayDate": "16 Декабря",
+          "dayName": "Среда",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 6,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 7,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 8,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4 ",
+          "dayDate": "17 Декабря",
+          "dayName": "Четверг",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 6,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 7,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5 ",
+          "dayDate": "18 Декабря",
+          "dayName": "Пятница",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.359"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6 ",
+          "dayDate": "19 Декабря",
+          "dayName": "Суббота",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 6,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 7,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 8,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7 ",
+          "dayDate": "20 Декабря",
+          "dayName": "Воскресенье",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3 ",
+      "group": "331-ПИ",
+      "week": "even",
+      "typeOfTraining": "undergrad",
+      "groupLessons": [
+        {
+          "id": "1 ",
+          "dayDate": "14 Декабря",
+          "dayName": "Понедельник",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2 ",
+          "dayDate": "15 Декабря",
+          "dayName": "Вторник",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.359"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3 ",
+          "dayDate": "16 Декабря",
+          "dayName": "Среда",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 6,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 7,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 8,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4 ",
+          "dayDate": "17 Декабря",
+          "dayName": "Четверг",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5 ",
+          "dayDate": "18 Декабря",
+          "dayName": "Пятница",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 6,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 7,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 8,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.359"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6 ",
+          "dayDate": "19 Декабря",
+          "dayName": "Суббота",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.669"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7 ",
+          "dayDate": "20 Декабря",
+          "dayName": "Воскресенье",
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "проф.Сахарова Л.В.",
+                  "fullNameTeacher": "проф.Сахарова Лидия Васильевна",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Элективные дисциплины ( модули) по физической культуре и спорту",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 3,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 4,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 5,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "ст.пр.Рачинскаяааааяяяяя Н.В.",
+                  "fullNameTeacher": "ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.359"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 6,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "практика",
+                  "classroom": "ауд.300"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 7,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Объектно- ориентированное программирование",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лабораторная",
+                  "classroom": "ауд.669"
+                }
+              ]
+            },
+            {
+              "lessonNumber": 8,
+              "lessonTime": "10:10-11:40",
+              "lessonsList": [
+                {
+                  "name": "Дискретная математика",
+                  "teacher": "доц.Чувенков А.Ф.",
+                  "fullNameTeacher": "доц.Чувенков Артем Фикретович",
+                  "typeLesson": "лекция",
+                  "classroom": "ауд.300"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ],
   "groups":[
         {

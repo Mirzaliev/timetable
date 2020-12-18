@@ -55,7 +55,7 @@ export default {
     return {
       settingSlick: {
         speed: 2500,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         touchThreshold: 1,
         infinite: false

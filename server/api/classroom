@@ -33,3 +33,54 @@
     ]
   }
 ]
+
+
+
+//https://next.json-generator.com/4kX6STE2t\
+// https://dev.to/localeai/architecting-http-clients-in-vue-js-applications-for-effective-network-communication-1eec
+[
+  {
+    'repeat(3)': {
+      id: '{{index() + 1}} ',
+      group: '3{{ index() + 1 }}1-ПИ',
+      week: 'even',
+      typeOfTraining: 'undergrad',
+      groupLessons: [
+      	{
+          'repeat(7)': {
+          id: '{{index() + 1}} ',
+          dayDate(tags){
+const date = new Date( 2020, 11, 13 + tags.index() + 1); const moment = tags.moment(date); const arr=[ 'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабря'];return moment.format('D')+ ' '+ arr[moment.month()];
+          },
+          dayName(tags){
+            const days = [ 'Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота' ]; const d = new Date( 2020, 11, 13 + tags.index() + 1); const n = d.getDay(); return days[n];
+          } ,
+          lessons: [
+           {
+            'repeat(1, 8)': {
+             lessonNumber: '{{ index() + 1 }}',
+             lessonTime: '10:10-11:40',
+             lessonsList: [{
+               name: '{{random("Дискретная математика", "Объектно- ориентированное программирование", "Элективные дисциплины ( модули) по физической культуре и спорту", "Безопасность жизнедеятельности и Элективные дисциплины ( модули) по физической культуре")}}',
+               teacher: '{{random("проф.Сахарова Л.В.", "ст.пр.Рачинскаяааааяяяяя Н.В.", "доц.Чувенков А.Ф.")}}',
+               fullNameTeacher(tags){
+                const teachers = {
+                   'проф.Сахарова Л.В.' : 'проф.Сахарова Лидия Васильевна',
+                   'ст.пр.Рачинскаяааааяяяяя Н.В.' : 'ст.пр.Рачинскаяааааяяяяя Нинна Владиславовна',
+                   'доц.Чувенков А.Ф.' : 'доц.Чувенков Артем Фикретович',
+                };
+                 
+                return teachers[this.teacher];
+               },
+               typeLesson: '{{ random("практика", "лекция", "лабораторная")}}',
+               classroom: '{{random("ауд.359", "ауд.669", "ауд.300")}}'
+             }]
+            }
+           }
+          ]
+          }
+    	}
+      ]
+    }
+  }
+]
