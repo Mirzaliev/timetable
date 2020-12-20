@@ -1,11 +1,11 @@
+const path = require('path')
 const jsonServer = require('json-server')
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
-
 const server = jsonServer.create()
-const router = jsonServer.router('db.json')
+const router = jsonServer.router(path.join(__dirname, 'db.json'))
 const middlewares = jsonServer.defaults()
-const adapter = new FileSync('db.json')
+const adapter = new FileSync(path.join(__dirname, 'db.json'))
 const db = low(adapter)
 
 server.use(function(req, res, next) {

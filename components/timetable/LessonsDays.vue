@@ -1,8 +1,8 @@
 <template>
   <div class="lessons-day">
     <div class="lessons-day-info">
-      <span class="lessons-day__name">Понедельник</span>
-      <span class="lessons-day__date">12 декабря</span>
+      <span class="lessons-day__name lh-1">Понедельник</span>
+      <span class="lessons-day__date lh-1">12 декабря</span>
     </div>
     <div class="lessons-list">
       <LessonListItem></LessonListItem>

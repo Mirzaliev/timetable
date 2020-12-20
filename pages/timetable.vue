@@ -71,10 +71,12 @@ export default {
       object: {
         name: 'Object Name'
       },
-      key: ''
+      lessons: []
     }
   },
-
+  async fetch({ store }) {
+    await store.dispatch('timetable/getTimetable', '321-ПИ')
+  },
   methods: {
     methodToRunOnSelect(payload) {
       this.object = payload

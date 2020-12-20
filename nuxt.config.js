@@ -1,6 +1,10 @@
 module.exports = {
   mode: 'universal',
   debug: true,
+
+  publicRuntimeConfig: {
+    baseApiURL: process.env.VUE_APP_BASE_URL || 'http://localhost:4000/'
+  },
   /*
    ** Headers of the page
    */
@@ -33,12 +37,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    '~plugins/vue-js-modal',
-    '~/plugins/axios',
-    { src: '~/plugins/popover.js', mode: 'client' }
-    // { src: '~/plugins/datepicker.js', mode: 'client' }
-  ],
+  plugins: ['~plugins/vue-js-modal', '~/plugins/axios', '~/plugins/repository'],
   /*
    ** Nuxt.js dev-modules
    */

@@ -1,5 +1,6 @@
-export default function({ $axios, store }) {
-  $axios.defaults.baseURL = 'http://localhost:4000/'
+export default function({ $axios, store, $config: { baseApiURL } }) {
+  $axios.defaults.baseURL = baseApiURL
+  //
   $axios.onError((err) => {
     store.error = err.response.data
     alert(err)

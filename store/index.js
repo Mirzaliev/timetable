@@ -1,3 +1,17 @@
+// import Vuex from 'vuex'
+// import timetable from './modules/timetable'
+//
+// const createStore = () => {
+//   return new Vuex.Store({
+//     namespaced: true,
+//     modules: {
+//       timetable
+//     }
+//   })
+// }
+//
+// export default createStore
+
 export const state = () => ({
   searchPageWrapHeight: 0,
   size: null,

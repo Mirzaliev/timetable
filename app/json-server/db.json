@@ -31,7 +31,7 @@
   ],
   "timetable":[
     {
-      "id": "1 ",
+      "id": "1",
       "group": "311-ПИ",
       "week": "even",
       "typeOfTraining": "undergrad",
@@ -504,7 +504,7 @@
       ]
     },
     {
-      "id": "2 ",
+      "id": "2",
       "group": "321-ПИ",
       "week": "even",
       "typeOfTraining": "undergrad",
@@ -1055,7 +1055,7 @@
       ]
     },
     {
-      "id": "3 ",
+      "id": "3",
       "group": "331-ПИ",
       "week": "even",
       "typeOfTraining": "undergrad",
