@@ -15,7 +15,6 @@ server.use(function(req, res, next) {
     'GET, POST, OPTIONS, PUT, PATCH, DELETE'
   )
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type')
-  res.setHeader('Access-Control-Allow-Credentials', true)
   next()
 })
 
@@ -49,7 +48,7 @@ server.get('/teachers', (req, res) => {
     .value()
   if (!teachers)
     res.status(503).send('- /teachers - Непредвиденная ошибка сервера')
-  return res.jsonp(teachers)
+  return res.status(200).jsonp(teachers)
 })
 
 server.get('/classroom', (req, res) => {
@@ -62,13 +61,6 @@ server.get('/classroom', (req, res) => {
   if (!classroom)
     res.status(503).send('- /classroom - Непредвиденная ошибка сервера')
   return res.jsonp(classroom)
-})
-
-server.get('/faculties', (req, res) => {
-  const faculties = db.get('faculties').value()
-  if (!faculties)
-    res.status(503).send('- /faculties - Непредвиденная ошибка сервера')
-  res.jsonp(faculties)
 })
 
 server.use(middlewares)

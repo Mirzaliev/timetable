@@ -1,7 +1,10 @@
 module.exports = {
   mode: 'universal',
   debug: true,
-
+  telemetry: false,
+  /*
+   ** Headers of the page
+   */
   publicRuntimeConfig: {
     baseApiURL: process.env.VUE_APP_BASE_URL || 'http://localhost:4000/'
   },

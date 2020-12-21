@@ -1,13 +1,15 @@
 <template>
   <div class="lessons-day">
     <div class="lessons-day-info">
-      <span class="lessons-day__name lh-1">Понедельник</span>
-      <span class="lessons-day__date lh-1">12 декабря</span>
+      <span class="lessons-day__name lh-1">{{ lessonDay.dayName }}</span>
+      <span class="lessons-day__date lh-1">{{ lessonDay.dayDate }}</span>
     </div>
     <div class="lessons-list">
-      <LessonListItem></LessonListItem>
-      <LessonListItem></LessonListItem>
-      <LessonListItem></LessonListItem>
+      <LessonListItem
+        v-for="lessons in lessonDay.lessons"
+        :key="lessons.id"
+        :lessons="lessons"
+      ></LessonListItem>
     </div>
   </div>
 </template>
@@ -17,6 +19,12 @@ export default {
   name: 'LessonsDays',
   components: {
     LessonListItem: () => import('~/components/timetable/LessonListItem.vue')
+  },
+  props: {
+    lessonDay: {
+      type: Object,
+      required: true
+    }
   }
 }
 </script>

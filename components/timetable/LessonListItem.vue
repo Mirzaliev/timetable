@@ -1,11 +1,11 @@
 <template>
   <div class="lessons-list-item">
     <!--      Если урок общий-->
-    <Lesson v-if="total"></Lesson>
+    <Lesson v-if="lessons.lessonsList.length === 1"></Lesson>
     <!--     или -->
-    <LessonEmpty v-else-if="false"></LessonEmpty>
+    <SplitLesson v-else-if="lessons.lessonsList.length > 1"></SplitLesson>
     <!--     или -->
-    <SplitLesson v-else></SplitLesson>
+    <LessonEmpty v-else></LessonEmpty>
   </div>
 </template>
 
@@ -16,6 +16,12 @@ export default {
     Lesson: () => import('~/components/timetable/Lesson.vue'),
     SplitLesson: () => import('~/components/timetable/SplitLesson.vue'),
     LessonEmpty: () => import('~/components/timetable/LessonEmpty.vue')
+  },
+  props: {
+    lessons: {
+      type: Object,
+      required: true
+    }
   },
   data() {
     return {

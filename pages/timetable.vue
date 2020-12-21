@@ -24,14 +24,11 @@
       </div>
       <div class="timetable-lessons-wrapper lessons">
         <VueSlickCarousel v-bind="settingSlick">
-          <LessonsDays></LessonsDays>
-          <LessonsDays></LessonsDays>
-          <LessonsDays></LessonsDays>
-          <LessonsDays></LessonsDays>
-          <LessonsDays></LessonsDays>
-          <LessonsDays></LessonsDays>
-          <LessonsDays></LessonsDays>
-          <LessonsDays></LessonsDays>
+          <LessonsDays
+            v-for="lessonDay in timetable.groupLessons"
+            :key="lessonDay.id"
+            :lesson-day="lessonDay"
+          ></LessonsDays>
         </VueSlickCarousel>
       </div>
     </div>
@@ -40,6 +37,7 @@
 <script>
 import dropdown from 'vue-dropdowns/Dropdown.vue'
 import VueSlickCarousel from 'vue-slick-carousel'
+import { mapState } from 'vuex'
 import LessonsDays from '~/components/timetable/LessonsDays.vue'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
@@ -55,7 +53,7 @@ export default {
     return {
       settingSlick: {
         speed: 2500,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         touchThreshold: 1,
         infinite: false
@@ -70,12 +68,18 @@ export default {
       ],
       object: {
         name: 'Object Name'
-      },
-      lessons: []
+      }
     }
   },
+  computed: {
+    ...mapState({
+      timetable: (state) => {
+        return state.timetable.timetable[0]
+      }
+    })
+  },
   async fetch({ store }) {
-    await store.dispatch('timetable/getTimetable', '321-ПИ')
+    await store.dispatch('timetable/getTimetable', 1)
   },
   methods: {
     methodToRunOnSelect(payload) {

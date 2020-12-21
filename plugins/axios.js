@@ -1,9 +1,11 @@
-export default function({ $axios, store, $config: { baseApiURL } }) {
+export default function({ $axios, error: nuxtError, $config: { baseApiURL } }) {
   $axios.defaults.baseURL = baseApiURL
   //
-  $axios.onError((err) => {
-    store.error = err.response.data
-    alert(err)
-    console.log('ИЗ сервера' + err.response.data)
+  $axios.onError((error) => {
+    nuxtError({
+      statusCode: error.response.status,
+      message: error.response.data
+    })
+    return Promise.resolve(false)
   })
 }

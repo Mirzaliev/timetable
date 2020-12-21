@@ -5,6 +5,6 @@ export default ($axios) => ({
     return $axios.$get(`${resource}`)
   },
   get(id) {
-    return $axios.$get(`${resource}?group=${id}`)
+    return $axios.$get(`${resource}?id=${id}`)
   }
 })
