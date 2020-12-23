@@ -1,15 +1,15 @@
 <template>
   <div class="lessons-day">
     <div class="lessons-day-info">
-      <span class="lessons-day__name lh-1">{{ lessonDay.dayName }}</span>
-      <span class="lessons-day__date lh-1">{{ lessonDay.dayDate }}</span>
+      <span class="lessons-day__name lh-1">{{ day.name }}</span>
+      <span class="lessons-day__date lh-1">{{ day.date }}</span>
     </div>
     <div class="lessons-list">
-      <LessonListItem
-        v-for="lessons in lessonDay.lessons"
+      <LessonsThisDay
+        v-for="lessons in day.lessons"
         :key="lessons.id"
-        :lessons="lessons"
-      ></LessonListItem>
+        :lessons-this-day="lessons"
+      ></LessonsThisDay>
     </div>
   </div>
 </template>
@@ -18,12 +18,19 @@
 export default {
   name: 'LessonsDays',
   components: {
-    LessonListItem: () => import('~/components/timetable/LessonListItem.vue')
+    LessonsThisDay: () => import('~/components/timetable/LessonsThisDay.vue')
   },
   props: {
-    lessonDay: {
+    day: {
       type: Object,
       required: true
+    }
+  },
+  methods: {
+    spliceLessons() {
+      const j = this.day.lessons.splice(1, 0, { sdfsdfsdf: 'sdfsdfdsf' })
+      console.log(j)
+      return j
     }
   }
 }

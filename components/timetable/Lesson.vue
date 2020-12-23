@@ -1,34 +1,58 @@
 <template>
   <div class="lessons-lesson">
     <div class="lessons-lesson-topBlock">
-      <span class="lessons-lesson__number lessons-lesson_greyText lh-1"
-        >1 урок</span
-      >
+      <span class="lessons-lesson__number lessons-lesson_greyText lh-1">{{
+        lesson.number
+      }}</span>
       <div class="lessons-lesson__name">
-        Культура речи и деловое общение и практика обществознания и пустой текст
-        какой для верстки
+        {{ lesson.name }}
       </div>
-      <span class="lessons-lesson__teacher lessons-lesson_greyText lh-1"
-        >доц. Полякова А.И</span
-      >
+      <span class="lessons-lesson__teacher lessons-lesson_greyText lh-1">{{
+        lesson.teacher
+      }}</span>
     </div>
     <div class="lessons-lesson-footerBlock lh-1">
-      <span class="lessons-lesson__label lessons-lesson__label_practice"
-        >практика</span
-      >
-      <span class="lessons-lesson__label lessons-lesson__label_classroom"
-        >ауд.201</span
-      >
-      <span class="lessons-lesson__label lessons-lesson__label_time"
-        >10:50-11:40</span
-      >
+      <span class="lessons-lesson__label" :class="lessonsTypeClass">{{
+        lessonType
+      }}</span>
+      <span class="lessons-lesson__label lessons-lesson__label_classroom">{{
+        lesson.classroom
+      }}</span>
+      <span class="lessons-lesson__label lessons-lesson__label_time">{{
+        lesson.time
+      }}</span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Lesson'
+  name: 'Lesson',
+  props: {
+    lesson: {
+      type: Object,
+      required: true
+    }
+  },
+  data() {
+    return {
+      lessonType: this.lesson.typeLesson
+    }
+  },
+  computed: {
+    lessonsTypeClass() {
+      switch (this.lessonType) {
+        case 'практика':
+          return 'lessons-lesson__label_practice'
+        case 'лабораторная':
+          return 'lessons-lesson__label_laboratory'
+        case 'лекция':
+          return 'lessons-lesson__label_lecture'
+        default:
+          return 'lessons-lesson__label_practice'
+      }
+    }
+  }
   // Надо добавить проверку  display: -webkit-box
 }
 </script>

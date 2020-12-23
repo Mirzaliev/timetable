@@ -1,7 +1,10 @@
 <template>
   <VueSlickCarousel v-bind="settingSlick">
-    <Lesson></Lesson>
-    <Lesson></Lesson>
+    <Lesson
+      v-for="lesson in lessonsForSubgroups.list"
+      :key="lesson.id"
+      :lesson="assignData(lesson)"
+    ></Lesson>
     <template #prevArrow="arrowOption">
       <button class="custom-arrow">
         <svg
@@ -60,10 +63,16 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import Lesson from '~/components/timetable/Lesson.vue'
 // optional style for arrows & dots
 export default {
-  name: 'SplitLesson',
+  name: 'ClassDivisionIntoSubgroups',
   components: {
     VueSlickCarousel,
     Lesson
+  },
+  props: {
+    lessonsForSubgroups: {
+      type: Object,
+      required: true
+    }
   },
   data() {
     return {
@@ -76,6 +85,18 @@ export default {
         swipeToSlide: false,
         swipe: false
       }
+    }
+  },
+  methods: {
+    assignData(lesson) {
+      return Object.assign(
+        {},
+        {
+          time: this.lessonsForSubgroups.time,
+          number: this.lessonsForSubgroups.number
+        },
+        lesson
+      )
     }
   }
 }

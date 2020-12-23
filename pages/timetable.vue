@@ -24,11 +24,11 @@
       </div>
       <div class="timetable-lessons-wrapper lessons">
         <VueSlickCarousel v-bind="settingSlick">
-          <LessonsDays
-            v-for="lessonDay in timetable.groupLessons"
-            :key="lessonDay.id"
-            :lesson-day="lessonDay"
-          ></LessonsDays>
+          <DayOfWeek
+            v-for="day in timetable.days"
+            :key="day.id"
+            :day="day"
+          ></DayOfWeek>
         </VueSlickCarousel>
       </div>
     </div>
@@ -38,7 +38,7 @@
 import dropdown from 'vue-dropdowns/Dropdown.vue'
 import VueSlickCarousel from 'vue-slick-carousel'
 import { mapState } from 'vuex'
-import LessonsDays from '~/components/timetable/LessonsDays.vue'
+import DayOfWeek from '~/components/timetable/DayOfWeek.vue'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
@@ -46,7 +46,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 export default {
   components: {
     dropdown,
-    LessonsDays,
+    DayOfWeek,
     VueSlickCarousel
   },
   data() {
