@@ -39,6 +39,18 @@ server.get('/groups', (req, res) => {
   return res.jsonp(groups)
 })
 
+server.get('/timetable', (req, res) => {
+  if (!req.query.groupId)
+    res.status(400).send('-/timetable- Неверный запрос. Отсутствуют параметры!')
+  const timetable = db
+    .get('timetable')
+    .find({ id: parseInt(req.query.groupId) })
+    .value()
+  if (!timetable)
+    res.status(500).send('- /teachers - Непредвиденная ошибка сервера')
+  return res.status(200).jsonp(timetable)
+})
+
 server.get('/teachers', (req, res) => {
   if (!req.query.sort)
     res.status(400).send('-/teachers- Неверный запрос. Отсутствуют параметры!')

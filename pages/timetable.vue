@@ -2,7 +2,8 @@
   <div class="timetable-wrapper">
     <div class="tt-nav">
       <div class="tt-title">
-        <span class="tt-title_hint">Расписание группы</span> ПИ-811
+        <span class="tt-title_hint">Расписание группы </span
+        >{{ timetable.group }}
       </div>
       <div class="tt-toolbar">
         <client-only placeholder="Загрузка">
@@ -74,12 +75,19 @@ export default {
   computed: {
     ...mapState({
       timetable: (state) => {
-        return state.timetable.timetable[0]
+        return state.timetable.timetable
       }
     })
   },
-  async fetch({ store }) {
-    await store.dispatch('timetable/getTimetable', 1)
+  async fetch({ store, query, error }) {
+    if (!query.groupId) {
+      error({ statusCode: 500, message: 'Неправильный адрес' })
+      return Promise.resolve(false)
+    }
+    await store.dispatch('timetable/getTimetable', {
+      groupId: query.groupId,
+      week: query.week
+    })
   },
   methods: {
     methodToRunOnSelect(payload) {

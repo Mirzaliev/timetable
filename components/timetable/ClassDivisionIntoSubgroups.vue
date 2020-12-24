@@ -127,4 +127,9 @@ export default {
         //content: '➡'
     .slick-disabled
       display: none!important
+    .slick-slide
+      position: relative
+      padding-right: 0
+      &:first-child
+        padding-left: 0
 </style>

@@ -23,7 +23,7 @@ export default class AddingEmptyLessons {
    * @returns {Object}
    */
   adding() {
-    this.throughEveryDayWithLessons(this.timetable[0].days)
+    this.throughEveryDayWithLessons(this.timetable.days)
     return this.timetable
   }
 
@@ -80,7 +80,7 @@ export default class AddingEmptyLessons {
    * @param {String} numberLesson
    */
   spliceEmptyLessonsToIndex(di, spliceIndex, numberLesson) {
-    this.timetable[0].days[di].lessons.splice(spliceIndex, 0, {
+    this.timetable.days[di].lessons.splice(spliceIndex, 0, {
       number: numberLesson,
       key: 'jj'
     })

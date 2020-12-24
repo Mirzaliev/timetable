@@ -53,6 +53,7 @@ export default {
 
 <style lang="sass">
 .lessons-list-item
+  position: relative
   height: 130px
   //padding: 0.7em
   margin-bottom: 0.8em

@@ -1,10 +1,20 @@
 const resource = '/timetable'
 
 export default ($axios) => ({
+  /**
+   *
+   * @return {Promise<any>}
+   */
   all() {
     return $axios.$get(`${resource}`)
   },
-  get(id) {
-    return $axios.$get(`${resource}?id=${id}`)
+  /**
+   *
+   * @param id
+   * @param week
+   * @return {Promise<any>}
+   */
+  get(id, week = 'even') {
+    return $axios.$get(`${resource}?groupId=${id}&week=${week}`)
   }
 })

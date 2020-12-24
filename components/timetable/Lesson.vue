@@ -22,6 +22,7 @@
         lesson.time
       }}</span>
     </div>
+    <a class="lessons-lesson__view" @click.prevent="handlerViewLesson()"></a>
   </div>
 </template>
 
@@ -52,6 +53,11 @@ export default {
           return 'lessons-lesson__label_practice'
       }
     }
+  },
+  methods: {
+    handlerViewLesson() {
+      console.log(this.lesson)
+    }
   }
   // Надо добавить проверку  display: -webkit-box
 }
@@ -67,7 +73,7 @@ export default {
   &:focus
     outline: none!important
   &__number
-    display: block
+    display: none
   &__name
     display: block
     display: -webkit-box
@@ -112,4 +118,18 @@ export default {
   &_greyText
     font-size: 0.88em
     color: $grey-for-text
+  &__view
+    position: absolute
+    display: block
+    border: 0
+    outline: 0
+    padding: 0
+    margin: 0
+    top: 0.5em
+    right: 0.5em
+    cursor: pointer
+    &:after
+      content: '\2807'
+      color: $grey-for-text
+      font-size: 22px
 </style>
